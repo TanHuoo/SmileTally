@@ -45,7 +45,7 @@ for (const grid of grids) observer.observe(grid);
 for (const card of cards) observer.observe(card);
 if (toggle && allGrid) {
   toggle.disabled = false;
-  toggle.addEventListener('change', () => {
+  const applyGrouping = () => {
     const grouped = toggle.checked;
     if (grouped) {
       for (const group of groups) group.grid.append(...group.cards);
@@ -56,6 +56,8 @@ if (toggle && allGrid) {
     document.querySelector('.gallery-categories').hidden = !grouped;
     allGrid.hidden = grouped;
     layout();
-  });
+  };
+  toggle.addEventListener('change', applyGrouping);
+  applyGrouping();
 }
 schedule();
