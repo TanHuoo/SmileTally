@@ -1,0 +1,2195 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="查看随口算的日常计算问题与真实应用界面：购物、贷款、保险、费用结算、材料、排期、营养与数学换算。"><title>支持哪些提问 · Smile Tally 随口算</title><link rel="canonical" href="https://tanhuoo.github.io/SmileTally/scenarios/"><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/style.css"></head><body><a class="skip" href="#main">跳到正文</a><header class="site-header wrap"><a class="brand" href="../"><img src="../assets/logo.svg" width="42" height="42" alt=""><span>Smile Tally</span></a><nav class="site-nav" aria-label="主导航"><a href="../">产品介绍</a><a href="./" aria-current="page">提问示例</a><a href="../support/">技术支持</a><a href="../privacy/">隐私政策</a><a href="../terms/">用户协议</a></nav></header><main id="main" class="wrap"><section class="page-intro gallery-intro"><p class="gallery-kicker">1.1.1 开发版 · 场景示例</p><h1>把生活里的问题<br>说给随口算</h1><p>91 个具体提问，看看答案怎样呈现</p><p class="gallery-note">以下为 1.1.1 开发版在模拟器中运行的本地示例界面。金额和结论取决于对应题目的条件；缺少必要条件时，会先请你补充。下载安装版本以 App Store 为准。</p></section><nav class="gallery-categories" aria-label="提问分类"><a href="#category-0">出行与通勤 <span>7</span></a><a href="#category-1">家庭费用与结算 <span>7</span></a><a href="#category-2">工作、日期与排程 <span>8</span></a><a href="#category-3">数学、换算与基础计算 <span>9</span></a><a href="#category-4">材料、裁切与搬运 <span>8</span></a><a href="#category-5">经营、备货与目标 <span>8</span></a><a href="#category-6">购物、订阅与权益 <span>14</span></a><a href="#category-7">金融与保险 <span>23</span></a><a href="#category-8">饮食与营养 <span>7</span></a></nav><section class="gallery-section" id="category-0"><h2>出行与通勤 <span>7 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="global-16"><h3>一次行程全成本</h3><p class="gallery-question"><span>试着问</span>自驾油费180元、过路费70元、停车费26元，共多少？两人均摊各多少？</p><p class="gallery-answer">出行总支出：276 元
+
+两人均摊 · 每人：138 元</p><a class="gallery-image" href="../assets/scenarios/global-16-question-answer.webp" aria-label="打开一次行程全成本完整截图"><img src="../assets/scenarios/global-16-question-answer.webp" width="960" height="2087" loading="lazy" alt="一次行程全成本：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-16-component-detail.webp"><img src="../assets/scenarios/global-16-component-detail.webp" width="960" height="2087" loading="lazy" alt="一次行程全成本的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>出行总支出：276 元
+
+两人均摊 · 每人：138 元
+出行总成本
+油费：180 元
+过路费：70 元
+停车费：26 元
+合计：276 元
+出行总成本
+油费：180 元
+过路费：70 元
+停车费：26 元
+合计：276 元
+出行总支出
+油费：180 元
+过路费：70 元
+停车费：26 元
+均摊人数：2 人</pre></details></article><article class="gallery-card" id="global-19"><h3>停车费封顶规则</h3><p class="gallery-question"><span>试着问</span>23点入3天后2点出，每自然日重置，首2小时5元、后续每小时3元，不足进位，每日封顶30，各日与合计多少？</p><p class="gallery-answer">停车应付总额：70 元
+停车总时长：3060 分钟
+实际免费时长：0 分钟</p><a class="gallery-image" href="../assets/scenarios/global-19-question-answer.webp" aria-label="打开停车费封顶规则完整截图"><img src="../assets/scenarios/global-19-question-answer.webp" width="960" height="2087" loading="lazy" alt="停车费封顶规则：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-19-component-detail.webp"><img src="../assets/scenarios/global-19-component-detail.webp" width="960" height="2087" loading="lazy" alt="停车费封顶规则的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>停车应付总额：70 元
+停车总时长：3060 分钟
+实际免费时长：0 分钟
+封顶前费用：152 元
+封顶减少费用：82 元
+停车应付：70 元
+23:00 → 后1天 00:00：5 元
+后1天 00:00 → 后2天 00:00：30 元
+后2天 00:00 → 后3天 00:00：30 元
+后3天 00:00 → 后3天 02:00：5 元
+每自然日零点重置；不足一个计费单位向上进位；后续每60分钟3元；首120分钟5元，首段从计费起点计时；每窗口封顶30元；首段与后续费分别到分，每窗口单独进位和封顶，跨窗口不合并进位；按给定停车时长计算
+停车费用与分时段账单
+停车时刻与收费规则：23点入3天后2点出，每自然日重置，首2小时5元、后续每小时3元，不足进位，每日封顶30，各日与合计多少？ </pre></details></article><article class="gallery-card" id="oil"><h3>平均单程油费</h3><p class="gallery-question"><span>试着问</span>油箱从0%加到23%花了200元，之后只用于接送孩子，12天后剩9%，每天2个单程，按油量比例估算平均每个单程油费多少？</p><p class="gallery-answer">平均单程油费 5.07 元/趟；12天24个单程，合计油费约121.74元</p><a class="gallery-image" href="../assets/scenarios/oil-question-answer-sample.webp" aria-label="打开平均单程油费完整截图"><img src="../assets/scenarios/oil-question-answer-sample.webp" width="960" height="2087" loading="lazy" alt="平均单程油费：问题与回答界面"></a><details class="gallery-detail"><summary>查看完整回答</summary><pre>平均单程油费 5.07 元/趟；12天24个单程，合计油费约121.74元</pre></details></article><article class="gallery-card" id="global-20"><h3>电车充电成本与时间</h3><p class="gallery-question"><span>试着问</span>60度电池从20%充到80%，效率90%，给定恒定电池侧功率30千瓦，电价0.9元/度，另收服务费0.3元/度，本次所列费用多少、理论多久？。电池与电量60度，20%到80%，功率、效率及收费效率90%，给定恒定电池侧功率30千瓦，电价0.9元/度，另收服务费0.3元/度</p><p class="gallery-answer">本次所列充电费用：48 元
+电池容量：60 度
+起始电量：20 %</p><a class="gallery-image" href="../assets/scenarios/global-20-question-answer.webp" aria-label="打开电车充电成本与时间完整截图"><img src="../assets/scenarios/global-20-question-answer.webp" width="960" height="2087" loading="lazy" alt="电车充电成本与时间：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-20-component-detail.webp"><img src="../assets/scenarios/global-20-component-detail.webp" width="960" height="2087" loading="lazy" alt="电车充电成本与时间的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>本次所列充电费用：48 元
+电池容量：60 度
+起始电量：20 %
+目标电量：80 %
+电池增加：36 度
+给定充电效率：90 %
+所需输入电量：40 度
+换算损耗：4 度
+给定恒定电池侧功率：30 千瓦
+理论充电时间：72 分钟
+给定电价：0.9 元/度
+电量费用：36 元
+按电量服务费单价：0.3 元/度
+按电量服务费：12 元
+所列费用合计：48 元
+按给定电量和恒定功率作理论换算，实际充电后段可能变慢；仅合计所列收费，未提供服务费不推定为0，合计最后舍入到分
+充电费用与理论时间
+电池与电量：60度，20%到80% 
+功率、效率及收费：效率90%，给定恒定电池侧功率30千瓦，电价0.9元/度，另收服务费0.3元/度 </pre></details></article><article class="gallery-card" id="global-17"><h3>自驾、打车与公共交通比较</h3><p class="gallery-question"><span>试着问</span>一家三人去机场，公交每人6元、每段全程80分钟；自驾1辆，每段油费30元、通行费20元、全程60分钟，停车全周期一次40元；打车每段整组120元、全程40分钟。比较单程，不计返程，仅按这些费用，哪个最省、哪个最快？</p><p class="gallery-answer">所列费用最低 · 公交：18 元
+共同出行人数：3 人
+共同单程段数：1 段</p><a class="gallery-image" href="../assets/scenarios/global-17-question-answer.webp" aria-label="打开自驾、打车与公共交通比较完整截图"><img src="../assets/scenarios/global-17-question-answer.webp" width="960" height="2087" loading="lazy" alt="自驾、打车与公共交通比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-17-component-detail.webp"><img src="../assets/scenarios/global-17-component-detail.webp" width="960" height="2087" loading="lazy" alt="自驾、打车与公共交通比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>所列费用最低 · 公交：18 元
+共同出行人数：3 人
+共同单程段数：1 段
+所列费用最低 · 公交：18 元
+全程耗时最短 · 打车：40 分钟
+公交 · 所列总费用：18 元
+公交 · 全程耗时：80 分钟
+公交 · 车票：18 元
+公交 · 全程：80 分钟
+公交 · 比最低费用多：0 元
+公交 · 比最短时间多：40 分钟
+自驾 · 所列总费用：90 元
+自驾 · 全程耗时：60 分钟
+自驾 · 油费：30 元
+自驾 · 通行费：20 元
+自驾 · 停车：40 元
+自驾 · 全程：60 分钟
+自驾 · 比最低费用多：72 元
+自驾 · 比最短时间多：20 分钟
+打车 · 所列总费用：120 元
+打车 · 全程耗时：40 分钟
+打车 · 整组车费：120 元
+打车 · 全程：40 分钟
+打车 · 比最低费用多：102 元
+打车 · 比最短时间多：0 分钟
+打车相比公交 · 多花：102 元
+打车相比公交 · 少用时间：40 分钟
+仅按明确计费数量、行程口径及所列费用与时长比较，按人和按车收费分开；未知费用不填0，两种指标分别排名，不代表实时交通报价或舒适度推荐
+共同出行人数：3 人
+共同单程段数：1 段
+公交
+车票：6 元 · 每人 · 每段行程
+全程：80 分钟 · 每段行程
+自驾
+明确车辆数：1 辆
+油费：30 元 · 每车 · 每段行程
+通行费：20 元 · 每车 · 每段行程
+停车：40 元 · 每车 · 全周期一次
+全程：60 分钟 · 每段行程
+打车
+整组车费：120 元 · 整组 · 每段行程
+全程：40 分钟 · 每段行程
+同周期出行费用与时间
+人数与行程：3人，单程1段 
+各方式收费和时长：共同出行人数：3 人
+共同单程段数：1 段
+公交
+车票：6 元 · 每人 · 每段行程
+全程：80 分钟 · 每段行程
+自驾
+明确车辆数：1 辆
+油费：30 元 · 每车 · 每段行程
+通行费：20 元 · 每车 · 每段行程
+停车：40 元 · 每车 · 全周期一次
+全程：60 分钟 · 每段行程
+打车
+整组车费：120 元 · 整组 · 每段行程
+全程：40 分钟 · 每段行程 </pre></details></article><article class="gallery-card" id="tariff-parkingTariff"><h3>跨日停车优惠与封顶</h3><p class="gallery-question"><span>试着问</span>23点停车4小时，按自然日分窗封顶20元。免费30分钟先扣时长，首段60分钟5元；0—8点每小时1元、8—24点每小时4元，不足1小时进位。封顶后打5折再减2元券，费用多少？</p><p class="gallery-answer">多次停车应付：2 元
+第一回 · 停车时长：240 分钟
+第一回 · 免费时长：30 分钟</p><a class="gallery-image" href="../assets/scenarios/tariff-parkingTariff-question-answer.webp" aria-label="打开跨日停车优惠与封顶完整截图"><img src="../assets/scenarios/tariff-parkingTariff-question-answer.webp" width="960" height="2087" loading="lazy" alt="跨日停车优惠与封顶：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/tariff-parkingTariff-component-detail.webp"><img src="../assets/scenarios/tariff-parkingTariff-component-detail.webp" width="960" height="2087" loading="lazy" alt="跨日停车优惠与封顶的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>多次停车应付：2 元
+第一回 · 停车时长：240 分钟
+第一回 · 免费时长：30 分钟
+第一回 · 首段费用：5 元
+第一回 · 封顶前费用：8 元
+第一回 · 封顶后费用：8 元
+第一回 · 优惠减少：6 元
+第一回 · 本次应付：2 元
+第一回 · 夜 · 入场时轴1470分钟：3 元
+每次重新入场独立给免费及首段，首段不因跨封顶窗口重置；从免费后开始首段。分时段与封顶边界分别进位到分；封顶按自然日每窗口限额，优惠每次出场使用一次，先折扣再减券；券不超过应付，未用券额不返现金。时间轴从所给第0天零点算钟表分钟，不推定节假日或真实运营政策
+明确规则的计费</pre></details></article><article class="gallery-card" id="global-18"><h3>通勤月票回本</h3><p class="gallery-question"><span>试着问</span>月票与按次费用比较，计划36次，按所列上限与超额规则计算。月票包含次数20次，超额单次票价6元，月票价格60元，计划乘坐次数36次，单次票价4元</p><p class="gallery-answer">按次购买更省：12 元
+计划乘坐：36 次
+按次购买费用：144 元</p><a class="gallery-image" href="../assets/scenarios/global-18-question-answer.webp" aria-label="打开通勤月票回本完整截图"><img src="../assets/scenarios/global-18-question-answer.webp" width="960" height="2087" loading="lazy" alt="通勤月票回本：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-18-component-detail.webp"><img src="../assets/scenarios/global-18-component-detail.webp" width="960" height="2087" loading="lazy" alt="通勤月票回本的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按次购买更省：12 元
+计划乘坐：36 次
+按次购买费用：144 元
+月票及超额费用：156 元
+费用差额：12 元
+月票首次更省：16 次
+0–14次：按次购买更省 
+15次：费用相同 
+16–29次：月票更省 
+30次：费用相同 
+31次及以上：按次购买更省 
+单次票价：4 元
+月票价格：60 元
+包含次数：20 次
+超额单次票价：6 元
+计划超额次数：16 次
+按同一有效期内的给定乘坐次数比较，各单价四舍五入到分；不默认每月天数、未给次数上限或超额票价
+通勤月票比较
+月票包含次数：20 次
+超额单次票价：6 元
+月票价格：60 元
+计划乘坐次数：36 次
+单次票价：4 元</pre></details></article></div></section><section class="gallery-section" id="category-1"><h2>家庭费用与结算 <span>7 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="global-11"><h3>分时电价与家电使用成本</h3><p class="gallery-question"><span>试着问</span>相同用法下，空调A每天1.01度，B每天1.02度，都按0.5元/度。30天哪台电费低、分别多少？</p><p class="gallery-answer">周期电费更低 · 空调A：15.15 元
+计算天数：30 天
+周期电费更低 · 空调A：15.15 元</p><a class="gallery-image" href="../assets/scenarios/global-11-question-answer.webp" aria-label="打开分时电价与家电使用成本完整截图"><img src="../assets/scenarios/global-11-question-answer.webp" width="960" height="2087" loading="lazy" alt="分时电价与家电使用成本：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-11-component-detail.webp"><img src="../assets/scenarios/global-11-component-detail.webp" width="960" height="2087" loading="lazy" alt="分时电价与家电使用成本的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>周期电费更低 · 空调A：15.15 元
+计算天数：30 天
+周期电费更低 · 空调A：15.15 元
+空调A · 周期总用电：30.3 度
+空调A · 周期总电费：15.15 元
+空调B · 周期总用电：30.6 度
+空调B · 周期总电费：15.3 元
+空调A · 全天 · 每日用电：1.01 度/天
+空调A · 全天 · 电价：0.5 元/度
+空调A · 全天 · 每日电费：0.505 元/天
+空调A · 全天 · 周期电费：15.15 元
+空调B · 全天 · 每日用电：1.02 度/天
+空调B · 全天 · 电价：0.5 元/度
+空调B · 全天 · 每日电费：0.51 元/天
+空调B · 全天 · 周期电费：15.3 元
+仅计算所列家电，按给定每日用量和天数测算；分项保留精度，合计最后舍入到分
+计算天数：30 天
+空调A
+全天：1.01 度/天 · 电价 0.5 元/度
+空调B
+全天：1.02 度/天 · 电价 0.5 元/度
+分时家电用电成本
+计算天数：30 天
+设备及电价条件：计算天数：30 天
+空调A
+全天：1.01 度/天 · 电价 0.5 元/度
+空调B
+全天：1.02 度/天 · 电价 0.5 元/度 </pre></details></article><article class="gallery-card" id="global-12"><h3>合租账单</h3><p class="gallery-question"><span>试着问</span>房租3000元三人均摊，水电600元按入住30/30/15天分，A全部代付，怎么结算？</p><p class="gallery-answer">成员间待转账合计：2360 元
+账单费用合计：3600 元
+已付合计：3600 元</p><a class="gallery-image" href="../assets/scenarios/global-12-question-answer.webp" aria-label="打开合租账单完整截图"><img src="../assets/scenarios/global-12-question-answer.webp" width="960" height="2087" loading="lazy" alt="合租账单：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-12-component-detail.webp"><img src="../assets/scenarios/global-12-component-detail.webp" width="960" height="2087" loading="lazy" alt="合租账单的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>成员间待转账合计：2360 元
+账单费用合计：3600 元
+已付合计：3600 元
+房租费用：3000 元
+房租分摊口径：参与者均摊 
+房租分给A：1000 元
+房租分给B：1000 元
+房租分给C：1000 元
+房租付款记录：A已付3000元 
+水电费用：600 元
+水电分摊口径：按给定天分摊 
+水电分给A：240 元
+水电A分摊依据：30 天
+水电分给B：240 元
+水电B分摊依据：30 天
+水电分给C：120 元
+水电C分摊依据：15 天
+水电付款记录：A已付600元 
+A应付：1240 元
+A已付：3600 元
+A应收：2360 元
+B应付：1240 元
+B已付：0 元
+B需转：1240 元
+C应付：1120 元
+C已付：0 元
+C需转：1120 元
+最少转账笔数：2 笔
+B → A：1240 元
+C → A：1120 元
+每笔分别按参与者或给定权重分到分，尾差按余数从大到小及名单顺序分配；付款记录按给定金额分别四舍五入到分；最少笔数只针对无转账限制、无手续费的成员间结算
+多笔账单与代付结算
+参与成员：A、B、C 
+账单与分摊规则：房租3000元三人均摊，水电600元按入住30/30/15天分，A全部代付，怎么结算？ </pre></details></article><article class="gallery-card" id="global-30"><h3>多人代付结算</h3><p class="gallery-question"><span>试着问</span>A付餐费360，B付车费90，C付场地120；车费只有A/B参加，其余三人均摊，谁转给谁？</p><p class="gallery-answer">成员间待转账合计：155 元
+账单费用合计：570 元
+已付合计：570 元</p><a class="gallery-image" href="../assets/scenarios/global-30-question-answer.webp" aria-label="打开多人代付结算完整截图"><img src="../assets/scenarios/global-30-question-answer.webp" width="960" height="2087" loading="lazy" alt="多人代付结算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-30-component-detail.webp"><img src="../assets/scenarios/global-30-component-detail.webp" width="960" height="2087" loading="lazy" alt="多人代付结算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>成员间待转账合计：155 元
+账单费用合计：570 元
+已付合计：570 元
+餐费费用：360 元
+餐费分摊口径：参与者均摊 
+餐费分给A：120 元
+餐费分给B：120 元
+餐费分给C：120 元
+餐费付款记录：A已付360元 
+车费费用：90 元
+车费分摊口径：参与者均摊 
+车费分给A：45 元
+车费分给B：45 元
+车费付款记录：B已付90元 
+场地费用：120 元
+场地分摊口径：参与者均摊 
+场地分给A：40 元
+场地分给B：40 元
+场地分给C：40 元
+场地付款记录：C已付120元 
+A应付：205 元
+A已付：360 元
+A应收：155 元
+B应付：205 元
+B已付：90 元
+B需转：115 元
+C应付：160 元
+C已付：120 元
+C需转：40 元
+最少转账笔数：2 笔
+B → A：115 元
+C → A：40 元
+每笔分别按参与者或给定权重分到分，尾差按余数从大到小及名单顺序分配；付款记录按给定金额分别四舍五入到分；最少笔数只针对无转账限制、无手续费的成员间结算
+多笔账单与代付结算
+参与成员：A、B、C 
+账单与分摊规则：A付餐费360，B付车费90，C付场地120；车费只有A/B参加，其余三人均摊，谁转给谁？ </pre></details></article><article class="gallery-card" id="global-31"><h3>有人中途加入或退出</h3><p class="gallery-question"><span>试着问</span>房租3000元三人均摊，水电600元按入住30/30/15天分，A全部代付，怎么结算？</p><p class="gallery-answer">成员间待转账合计：2360 元
+账单费用合计：3600 元
+已付合计：3600 元</p><a class="gallery-image" href="../assets/scenarios/global-31-question-answer.webp" aria-label="打开有人中途加入或退出完整截图"><img src="../assets/scenarios/global-31-question-answer.webp" width="960" height="2087" loading="lazy" alt="有人中途加入或退出：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-31-component-detail.webp"><img src="../assets/scenarios/global-31-component-detail.webp" width="960" height="2087" loading="lazy" alt="有人中途加入或退出的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>成员间待转账合计：2360 元
+账单费用合计：3600 元
+已付合计：3600 元
+房租费用：3000 元
+房租分摊口径：参与者均摊 
+房租分给A：1000 元
+房租分给B：1000 元
+房租分给C：1000 元
+房租付款记录：A已付3000元 
+水电费用：600 元
+水电分摊口径：按给定天分摊 
+水电分给A：240 元
+水电A分摊依据：30 天
+水电分给B：240 元
+水电B分摊依据：30 天
+水电分给C：120 元
+水电C分摊依据：15 天
+水电付款记录：A已付600元 
+A应付：1240 元
+A已付：3600 元
+A应收：2360 元
+B应付：1240 元
+B已付：0 元
+B需转：1240 元
+C应付：1120 元
+C已付：0 元
+C需转：1120 元
+最少转账笔数：2 笔
+B → A：1240 元
+C → A：1120 元
+每笔分别按参与者或给定权重分到分，尾差按余数从大到小及名单顺序分配；付款记录按给定金额分别四舍五入到分；最少笔数只针对无转账限制、无手续费的成员间结算
+多笔账单与代付结算
+参与成员：A、B、C 
+账单与分摊规则：房租3000元三人均摊，水电600元按入住30/30/15天分，A全部代付，怎么结算？ </pre></details></article><article class="gallery-card" id="global-13"><h3>租房总成本</h3><p class="gallery-question"><span>试着问</span>租12个月：A房月租3000，通勤10元/天，B房月租3300，通勤5元/天；每月通勤22天，两房物业90元/月。搬家A1200、B1800元，押金A3000、B3300元。两房押金按条件全退，周期成本各多少、哪套更省？</p><p class="gallery-answer">周期所列成本更低 · A房：40920 元
+共同租期：12 个月
+A房 · 所列非押金费用：40920 元</p><a class="gallery-image" href="../assets/scenarios/global-13-question-answer.webp" aria-label="打开租房总成本完整截图"><img src="../assets/scenarios/global-13-question-answer.webp" width="960" height="2087" loading="lazy" alt="租房总成本：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-13-component-detail.webp"><img src="../assets/scenarios/global-13-component-detail.webp" width="960" height="2087" loading="lazy" alt="租房总成本的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>周期所列成本更低 · A房：40920 元
+共同租期：12 个月
+A房 · 所列非押金费用：40920 元
+A房 · 房租：36000 元
+A房 · 通勤：2640 元
+A房 · 物业：1080 元
+A房 · 搬家：1200 元
+A房 · 押金支付：3000 元
+A房 · 周期支付含押金：43920 元
+A房 · 按条件退回押金：3000 元
+A房 · 周期所列成本：40920 元
+A房 · 比最低成本多：0 元
+B房 · 所列非押金费用：43800 元
+B房 · 房租：39600 元
+B房 · 通勤：1320 元
+B房 · 物业：1080 元
+B房 · 搬家：1800 元
+B房 · 押金支付：3300 元
+B房 · 周期支付含押金：47100 元
+B房 · 按条件退回押金：3300 元
+B房 · 周期所列成本：43800 元
+B房 · 比最低成本多：2880 元
+按共同租期和所列费用比较，一次性费用只计一次；押金支付与按条件退回分开，未提供押金不推定为0
+共同租期：12 个月
+A房
+给定每月通勤日数：22 天
+房租：3000 元/月
+通勤：10 元/通勤日
+物业：90 元/月
+搬家：1200 元 · 一次性
+押金支付：3000 元
+按给定条件退回押金：3000 元
+B房
+给定每月通勤日数：22 天
+房租：3300 元/月
+通勤：5 元/通勤日
+物业：90 元/月
+搬家：1800 元 · 一次性
+押金支付：3300 元
+按给定条件退回押金：3300 元
+同租期房租与通勤总成本
+共同租期：12 个月
+各方案费用与押金：共同租期：12 个月
+A房
+给定每月通勤日数：22 天
+房租：3000 元/月
+通勤：10 元/通勤日
+物业：90 元/月
+搬家：1200 元 · 一次性
+押金支付：3000 元
+按给定条件退回押金：3000 元
+B房
+给定每月通勤日数：22 天
+房租：3300 元/月
+通勤：5 元/通勤日
+物业：90 元/月
+搬家：1800 元 · 一次性
+押金支付：3300 元
+按给定条件退回押金：3300 元 </pre></details></article><article class="gallery-card" id="tariff-tariffBill"><h3>阶梯与分时联动计费</h3><p class="gallery-question"><span>试着问</span>本计费周期之前用90度，前100度每度1元，超过100度每度2元，另有5元基本费。之后先峰时20度倍率2，再谷时20度倍率0.5，无附加费，按时间顺序累计阶梯、总额四舍五入，费用多少？</p><p class="gallery-answer">阶梯与分时应付：85 元
+此前累计用量：90 度
+本次用量：40 度</p><a class="gallery-image" href="../assets/scenarios/tariff-tariffBill-question-answer.webp" aria-label="打开阶梯与分时联动计费完整截图"><img src="../assets/scenarios/tariff-tariffBill-question-answer.webp" width="960" height="2087" loading="lazy" alt="阶梯与分时联动计费：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/tariff-tariffBill-component-detail.webp"><img src="../assets/scenarios/tariff-tariffBill-component-detail.webp" width="960" height="2087" loading="lazy" alt="阶梯与分时联动计费的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>阶梯与分时应付：85 元
+此前累计用量：90 度
+本次用量：40 度
+计费周期累计：130 度
+固定费用：5 元
+本次用量费用：80 元
+本次应付：85 元
+峰 · 阶梯1 · 用量：10 度
+峰 · 阶梯1 · 单价：2 元/度
+峰 · 阶梯1 · 费用：20 元
+峰 · 阶梯2 · 用量：10 度
+峰 · 阶梯2 · 单价：4 元/度
+峰 · 阶梯2 · 费用：40 元
+谷 · 阶梯2 · 用量：20 度
+谷 · 阶梯2 · 单价：1 元/度
+谷 · 阶梯2 · 费用：20 元
+逐段累进，只有进入相应阶梯的用量按该档价格；按所给用量先后顺序分配阶梯；分时单价 = 阶梯基础单价 × 明确时段系数 + 明确时段加价；全部未舍入用量费用相加后到分；此前累计只影响档位，不重复收费，未知规则不推定
+明确规则的计费</pre></details></article><article class="gallery-card" id="global-10"><h3>阶梯水电气费</h3><p class="gallery-question"><span>试着问</span>本月用电420度，前200度0.50元，再200度0.55元，超过400度0.57元，电费多少？</p><p class="gallery-answer">本月电费：221.4 元
+
+420度电费构成</p><a class="gallery-image" href="../assets/scenarios/global-10-question-answer.webp" aria-label="打开阶梯水电气费完整截图"><img src="../assets/scenarios/global-10-question-answer.webp" width="960" height="2087" loading="lazy" alt="阶梯水电气费：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-10-component-detail.webp"><img src="../assets/scenarios/global-10-component-detail.webp" width="960" height="2087" loading="lazy" alt="阶梯水电气费的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>本月电费：221.4 元
+
+420度电费构成
+第一档：100 元
+第二档：110 元
+第三档：11.4 元
+合计：221.4 元
+420度电费构成
+第一档：100 元
+第二档：110 元
+第三档：11.4 元
+合计：221.4 元
+本月电费
+本月用电：420 度
+第一档：前200度，每度0.50元 
+第二档：第201至400度，每度0.55元 
+第三档：超过400度，每度0.57元 </pre></details></article></div></section><section class="gallery-section" id="category-2"><h2>工作、日期与排程 <span>8 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="scenario-timeline"><h3>倒推开始时间</h3><p class="gallery-question"><span>试着问</span>15:00到达，准备20分钟，路程40分钟，最晚几点开始准备？</p><p class="gallery-answer">最晚开始时间：14:00 
+总耗时：60 分钟
+14:00 开始准备</p><a class="gallery-image" href="../assets/scenarios/scenario-timeline-question-answer.webp" aria-label="打开倒推开始时间完整截图"><img src="../assets/scenarios/scenario-timeline-question-answer.webp" width="960" height="2087" loading="lazy" alt="倒推开始时间：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/scenario-timeline-component-detail.webp"><img src="../assets/scenarios/scenario-timeline-component-detail.webp" width="960" height="2087" loading="lazy" alt="倒推开始时间的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>最晚开始时间：14:00 
+总耗时：60 分钟
+14:00 开始准备
+14:20 出发
+15:00 到达
+按所给顺序与时长倒推，未暗中添加缓冲时间
+最晚开始时间
+目标时刻：15:00 
+开始准备：20 分钟
+出发：40 分钟</pre></details></article><article class="gallery-card" id="physical-resources"><h3>共享资源排期</h3><p class="gallery-question"><span>试着问</span>2026年10月2日9点开工，只工作周一至周五9—12点和13—17点。切割120分钟、安装120分钟共用一位师傅，检查30分钟须在安装后；按切割优先排程，安装须开工180分钟内完成，能做到吗？</p><p class="gallery-answer">共享资源与工作日历排期：390 分钟
+材料切割 · 开始：2026-10-02 09:00 
+材料切割 · 结束：2026-10-02 11:00 </p><a class="gallery-image" href="../assets/scenarios/physical-resources-question-answer.webp" aria-label="打开共享资源排期完整截图"><img src="../assets/scenarios/physical-resources-question-answer.webp" width="960" height="2087" loading="lazy" alt="共享资源排期：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/physical-resources-component-detail.webp"><img src="../assets/scenarios/physical-resources-component-detail.webp" width="960" height="2087" loading="lazy" alt="共享资源排期的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>共享资源与工作日历排期：390 分钟
+材料切割 · 开始：2026-10-02 09:00 
+材料切割 · 结束：2026-10-02 11:00 
+材料切割 · 等待：0 分钟
+材料切割 · 共享资源：同一位师傅 
+安装组件 · 开始：2026-10-02 13:00 
+安装组件 · 结束：2026-10-02 15:00 
+安装组件 · 等待：240 分钟
+安装组件 · 共享资源：同一位师傅 
+安装组件 · 截止要求：超过截止 
+检查交付 · 开始：2026-10-02 15:00 
+检查交付 · 结束：2026-10-02 15:30 
+检查交付 · 等待：0 分钟
+检查交付 · 共享资源：无 
+按明确任务优先顺序安排，单容量资源不能同时占用；任务不可中断且必须完整落在一个工作时间窗内，等待包含资源和日历影响。此为给定优先顺序下可行排期，不声称所有排列的最短工期
+材料、搬运与共享资源
+计算条件：使用本次明确的尺寸、工艺与日历规则 </pre></details></article><article class="gallery-card" id="global-27"><h3>兼职时薪的真实口径</h3><p class="gallery-question"><span>试着问</span>月收入8800元，22天每天工作8小时、通勤2小时，真实时薪多少？</p><p class="gallery-answer">计入时间与成本后的时薪：40 元/小时
+仅工作时薪：50 元/小时
+工作时间：176 小时</p><a class="gallery-image" href="../assets/scenarios/global-27-question-answer.webp" aria-label="打开兼职时薪的真实口径完整截图"><img src="../assets/scenarios/global-27-question-answer.webp" width="960" height="2087" loading="lazy" alt="兼职时薪的真实口径：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-27-component-detail.webp"><img src="../assets/scenarios/global-27-component-detail.webp" width="960" height="2087" loading="lazy" alt="兼职时薪的真实口径的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>计入时间与成本后的时薪：40 元/小时
+仅工作时薪：50 元/小时
+工作时间：176 小时
+通勤与准备：44 小时
+总投入：220 小时
+实际净收入：8800 元
+按所给周期金额与时间计算，通勤和准备计入投入时间
+计入时间与成本后的时薪
+通勤与准备时间：44 小时
+周期收入：8800 元
+工作时间：176 小时</pre></details></article><article class="gallery-card" id="global-33"><h3>多阶段任务排期</h3><p class="gallery-question"><span>试着问</span>任务按给定依赖执行，独立任务人员设备可同时使用，分别计算各任务最早开始、结束、可延迟时间与整体最早完工。准备A · 时长20分钟，准备B · 时长30分钟，汇合后完成 · 时长10分钟</p><p class="gallery-answer">依赖排期最早完工：40 分钟
+准备A · 前置任务：无前置任务 
+准备A · 最早开始：0 分钟</p><a class="gallery-image" href="../assets/scenarios/global-33-question-answer.webp" aria-label="打开多阶段任务排期完整截图"><img src="../assets/scenarios/global-33-question-answer.webp" width="960" height="2087" loading="lazy" alt="多阶段任务排期：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-33-component-detail.webp"><img src="../assets/scenarios/global-33-component-detail.webp" width="960" height="2087" loading="lazy" alt="多阶段任务排期的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>依赖排期最早完工：40 分钟
+准备A · 前置任务：无前置任务 
+准备A · 最早开始：0 分钟
+准备A · 最早结束：20 分钟
+准备A · 最晚开始：10 分钟
+准备A · 可延迟时间：10 分钟
+准备A · 给定时长：20 分钟
+准备A · 关键任务：否 
+准备B · 前置任务：无前置任务 
+准备B · 最早开始：0 分钟
+准备B · 最早结束：30 分钟
+准备B · 最晚开始：0 分钟
+准备B · 可延迟时间：0 分钟
+准备B · 给定时长：30 分钟
+准备B · 关键任务：是 
+汇合后完成 · 前置任务：准备A、准备B 
+汇合后完成 · 最早开始：30 分钟
+汇合后完成 · 最早结束：40 分钟
+汇合后完成 · 最晚开始：30 分钟
+汇合后完成 · 可延迟时间：0 分钟
+汇合后完成 · 给定时长：10 分钟
+汇合后完成 · 关键任务：是 
+按明确前置依赖及整数分钟时长测算，各独立任务资源可同时使用；等待只按给定任务计入，不假设共用人员设备、工作日限制或未知缓冲。可延迟时间表示不推迟整体最早完工的余量，不代表任务可随意跳过
+任务依赖排期
+准备A · 时长：20 分钟
+准备B · 时长：30 分钟
+汇合后完成 · 时长：10 分钟</pre></details></article><article class="gallery-card" id="global-32"><h3>工作日与截止日期</h3><p class="gallery-question"><span>试着问</span>2026年10月2日至11月1日，排除周末，明确不考虑额外节假日和补班，不计起日计截止日，可用多少工作日</p><p class="gallery-answer">可用工作日：20 天
+不计起始日，计入截止日；周末排除，节假日与调休仅按所给清单
+可用工作日</p><a class="gallery-image" href="../assets/scenarios/global-32-question-answer.webp" aria-label="打开工作日与截止日期完整截图"><img src="../assets/scenarios/global-32-question-answer.webp" width="960" height="2087" loading="lazy" alt="工作日与截止日期：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-32-component-detail.webp"><img src="../assets/scenarios/global-32-component-detail.webp" width="960" height="2087" loading="lazy" alt="工作日与截止日期的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>可用工作日：20 天
+不计起始日，计入截止日；周末排除，节假日与调休仅按所给清单
+可用工作日</pre></details></article><article class="gallery-card" id="global-26"><h3>工资到账拆解</h3><p class="gallery-question"><span>试着问</span>底薪8000元，销售额20000元提成6%，加班12小时每小时50元，社保800元、税费200元，无其他费用。工资到账和占比多少？</p><p class="gallery-answer">预计到账金额：8800 元
+所列收入合计：9800 元
+所列扣款合计：1000 元</p><a class="gallery-image" href="../assets/scenarios/global-26-question-answer.webp" aria-label="打开工资到账拆解完整截图"><img src="../assets/scenarios/global-26-question-answer.webp" width="960" height="2087" loading="lazy" alt="工资到账拆解：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-26-component-detail.webp"><img src="../assets/scenarios/global-26-component-detail.webp" width="960" height="2087" loading="lazy" alt="工资到账拆解的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>预计到账金额：8800 元
+所列收入合计：9800 元
+所列扣款合计：1000 元
+预计到账：8800 元
+净额占所列收入：≈ 89.8 %
+收入 · 底薪：8000 元
+收入 · 销售提成：1200 元
+收入 · 加班收入：600 元
+扣款 · 社保扣款：800 元
+扣款 · 给定税费：200 元
+按已确认的全部收入与扣款测算，各项四舍五入到分后合计；扣款按列出顺序计算
+工资收入与扣款拆解
+收入、扣款与口径：底薪8000元，销售额20000元提成6%，加班12小时每小时50元，社保800元、税费200元，无其他费用。工资到账和占比多少？ </pre></details></article><article class="gallery-card" id="scenario-calendar"><h3>自然日计算</h3><p class="gallery-question"><span>试着问</span>2026年10月2日到11月1日还剩多少自然日，不计今天，计入截止日？</p><p class="gallery-answer">相隔自然日：30 天
+不计起始日，计入截止日；按自然日
+相隔自然日</p><a class="gallery-image" href="../assets/scenarios/scenario-calendar-question-answer.webp" aria-label="打开自然日计算完整截图"><img src="../assets/scenarios/scenario-calendar-question-answer.webp" width="960" height="2087" loading="lazy" alt="自然日计算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/scenario-calendar-component-detail.webp"><img src="../assets/scenarios/scenario-calendar-component-detail.webp" width="960" height="2087" loading="lazy" alt="自然日计算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>相隔自然日：30 天
+不计起始日，计入截止日；按自然日
+相隔自然日
+截止日期：2026-11-01 
+起始日期：2026-10-02 </pre></details></article><article class="gallery-card" id="schedule-anchor"><h3>跨日多阶段排程</h3><p class="gallery-question"><span>试着问</span>任务按给定依赖执行，独立任务人员设备可同时使用，分别计算各任务最早开始、结束、可延迟时间与整体最早完工。准备A · 时长20分钟，准备B · 时长30分钟，汇合后完成 · 时长10分钟，开始日期2026-12-31，开始时刻23:40</p><p class="gallery-answer">依赖排期最早完工：40 分钟
+明确开始日期：2026-12-31 
+明确开始时刻：2026-12-31 23:40 </p><a class="gallery-image" href="../assets/scenarios/schedule-anchor-question-answer.webp" aria-label="打开跨日多阶段排程完整截图"><img src="../assets/scenarios/schedule-anchor-question-answer.webp" width="960" height="2087" loading="lazy" alt="跨日多阶段排程：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/schedule-anchor-component-detail.webp"><img src="../assets/scenarios/schedule-anchor-component-detail.webp" width="960" height="2087" loading="lazy" alt="跨日多阶段排程的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>依赖排期最早完工：40 分钟
+明确开始日期：2026-12-31 
+明确开始时刻：2026-12-31 23:40 
+整体最早完工时刻：2027-01-01 00:20 
+准备A · 前置任务：无前置任务 
+准备A · 最早开始：0 分钟
+准备A · 最早结束：20 分钟
+准备A · 最晚开始：10 分钟
+准备A · 可延迟时间：10 分钟
+准备A · 给定时长：20 分钟
+准备A · 关键任务：否 
+准备A · 最早开始时刻：2026-12-31 23:40 
+准备A · 最早结束时刻：2027-01-01 00:00 
+准备A · 最晚开始时刻：2026-12-31 23:50 
+准备B · 前置任务：无前置任务 
+准备B · 最早开始：0 分钟
+准备B · 最早结束：30 分钟
+准备B · 最晚开始：0 分钟
+准备B · 可延迟时间：0 分钟
+准备B · 给定时长：30 分钟
+准备B · 关键任务：是 
+准备B · 最早开始时刻：2026-12-31 23:40 
+准备B · 最早结束时刻：2027-01-01 00:10 
+准备B · 最晚开始时刻：2026-12-31 23:40 
+汇合后完成 · 前置任务：准备A、准备B 
+汇合后完成 · 最早开始：30 分钟
+汇合后完成 · 最早结束：40 分钟
+汇合后完成 · 最晚开始：30 分钟
+汇合后完成 · 可延迟时间：0 分钟
+汇合后完成 · 给定时长：10 分钟
+汇合后完成 · 关键任务：是 
+汇合后完成 · 最早开始时刻：2027-01-01 00:10 
+汇合后完成 · 最早结束时刻：2027-01-01 00:20 
+汇合后完成 · 最晚开始时刻：2027-01-01 00:10 
+按明确前置依赖及整数分钟时长测算，各独立任务资源可同时使用；等待只按给定任务计入，不假设共用人员设备、工作日限制或未知缓冲。可延迟时间表示不推迟整体最早完工的余量，不代表任务可随意跳过
+任务依赖排期
+准备A · 时长：20 分钟
+准备B · 时长：30 分钟
+汇合后完成 · 时长：10 分钟
+开始日期：2026-12-31 
+开始时刻：23:40 </pre></details></article></div></section><section class="gallery-section" id="category-3"><h2>数学、换算与基础计算 <span>9 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="linear"><h3>一元一次方程</h3><p class="gallery-question"><span>试着问</span>B加B÷3等于16，B等于多少？</p><p class="gallery-answer">B的值：12 
+按运算顺序合并同类项求解，已代回原方程核对
+B+B/3=16</p><a class="gallery-image" href="../assets/scenarios/linear-question-answer.webp" aria-label="打开一元一次方程完整截图"><img src="../assets/scenarios/linear-question-answer.webp" width="960" height="2087" loading="lazy" alt="一元一次方程：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/linear-component-detail.webp"><img src="../assets/scenarios/linear-component-detail.webp" width="960" height="2087" loading="lazy" alt="一元一次方程的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>B的值：12 
+按运算顺序合并同类项求解，已代回原方程核对
+B+B/3=16
+(4/3) × B = 16
+B = 12
+代回原方程（B = 12）：左侧 16 = 右侧 16
+求B的值
+方程：B+B/3=16 </pre></details></article><article class="gallery-card" id="quadratic"><h3>一元二次方程</h3><p class="gallery-question"><span>试着问</span>b×b+b+b=120，b是多少？</p><p class="gallery-answer">b的值：10 或 -12 
+已列出全部实数解，并逐个代回原方程核对
+b*b+b+b=120</p><a class="gallery-image" href="../assets/scenarios/quadratic-question-answer.webp" aria-label="打开一元二次方程完整截图"><img src="../assets/scenarios/quadratic-question-answer.webp" width="960" height="2087" loading="lazy" alt="一元二次方程：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/quadratic-component-detail.webp"><img src="../assets/scenarios/quadratic-component-detail.webp" width="960" height="2087" loading="lazy" alt="一元二次方程的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>b的值：10 或 -12 
+已列出全部实数解，并逐个代回原方程核对
+b*b+b+b=120
+(1) × b² + (2) × b + (-120) = 0
+判别式 Δ = (2)² − 4 × (1) × (-120) = 484
+b = 10 或 -12
+代回原方程（b = 10）：左侧 120 = 右侧 120
+代回原方程（b = -12）：左侧 120 = 右侧 120
+求b的值
+方程：b*b+b+b=120 </pre></details></article><article class="gallery-card" id="system"><h3>两未知数方程</h3><p class="gallery-question"><span>试着问</span>AB-A=21，AB-B=24，求A和B</p><p class="gallery-answer">第1组 · A：7 
+各组内的值必须配对使用，已逐组代回两个方程核对
+第1组 · B：4 </p><a class="gallery-image" href="../assets/scenarios/system-question-answer.webp" aria-label="打开两未知数方程完整截图"><img src="../assets/scenarios/system-question-answer.webp" width="960" height="2087" loading="lazy" alt="两未知数方程：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/system-component-detail.webp"><img src="../assets/scenarios/system-component-detail.webp" width="960" height="2087" loading="lazy" alt="两未知数方程的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>第1组 · A：7 
+各组内的值必须配对使用，已逐组代回两个方程核对
+第1组 · B：4 
+第2组 · A：-3 
+第2组 · B：-6 
+第1组：A = 7，B = 4；代回两个方程均成立
+第2组：A = -3，B = -6；代回两个方程均成立
+按AB表示A×B理解
+未限定正数，列出全部实数解
+求A和B
+方程1：A×B - A = 21 
+方程2：A×B - B = 24 
+取值范围：实数 </pre></details></article><article class="gallery-card" id="salary"><h3>大小周时薪</h3><p class="gallery-question"><span>试着问</span>我的月薪10000元，大小周，每天9:00到12:30、13:50到18:00，按每月四周22个工作日估算，时薪是多少？</p><p class="gallery-answer">时薪：59.29 元/小时
+每天7小时40分钟，每月168小时40分钟
+每日：210 + 250 = 460分钟</p><a class="gallery-image" href="../assets/scenarios/salary-question-answer.webp" aria-label="打开大小周时薪完整截图"><img src="../assets/scenarios/salary-question-answer.webp" width="960" height="2087" loading="lazy" alt="大小周时薪：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/salary-component-detail.webp"><img src="../assets/scenarios/salary-component-detail.webp" width="960" height="2087" loading="lazy" alt="大小周时薪的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>时薪：59.29 元/小时
+每天7小时40分钟，每月168小时40分钟
+每日：210 + 250 = 460分钟
+时薪：10000 ÷ (460 × 22 ÷ 60)
+按每月四周、大小周22个工作日估算
+时薪
+月薪：10000 元
+每月工作日：22 天</pre></details></article><article class="gallery-card" id="exchange"><h3>指定汇率换算</h3><p class="gallery-question"><span>试着问</span>按我指定的汇率1美元=6.70523387人民币，100美元是多少人民币？</p><p class="gallery-answer">100 USD ≈ 670.52 CNY
+1 USD = 6.70523387 CNY
+用户指定汇率</p><a class="gallery-image" href="../assets/scenarios/exchange-question-answer.webp" aria-label="打开指定汇率换算完整截图"><img src="../assets/scenarios/exchange-question-answer.webp" width="960" height="2087" loading="lazy" alt="指定汇率换算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/exchange-component-detail.webp"><img src="../assets/scenarios/exchange-component-detail.webp" width="960" height="2087" loading="lazy" alt="指定汇率换算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>100 USD ≈ 670.52 CNY
+1 USD = 6.70523387 CNY
+用户指定汇率
+来源 用户指定
+未计手续费，实际到账以兑换机构为准
+原币金额 × 汇率，最终按2位小数舍入
+美元换算为人民币
+原币金额：100 
+原币种：USD 
+目标币种：CNY 
+汇率方式：manual 
+每 1 USD 对应：6.70523387 CNY</pre></details></article><article class="gallery-card" id="global-21"><h3>提前还贷</h3><p class="gallery-question"><span>试着问</span>剩余本金80万元，月利率0.3%，还剩20年，等额本息，提前还10万元，两种策略各省多少？</p><p class="gallery-answer">降低月供 · 净节省：40426.75 元
+按本次提前还款时的剩余本金和固定利率测算
+降低月供 · 月供/末期除外：4095.78 元</p><a class="gallery-image" href="../assets/scenarios/global-21-question-answer.webp" aria-label="打开提前还贷完整截图"><img src="../assets/scenarios/global-21-question-answer.webp" width="960" height="2087" loading="lazy" alt="提前还贷：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-21-component-detail.webp"><img src="../assets/scenarios/global-21-component-detail.webp" width="960" height="2087" loading="lazy" alt="提前还贷的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>降低月供 · 净节省：40426.75 元
+按本次提前还款时的剩余本金和固定利率测算
+降低月供 · 月供/末期除外：4095.78 元
+降低月供 · 剩余期数：240 个月
+缩短期限 · 净节省：93091.32 元
+缩短期限 · 月供/末期除外：4680.89 元
+缩短期限 · 剩余期数：199 个月
+提前还款 100000 元，费用 0 元
+降低月供：剩余240期，首期4095.78元，利息减少40426.75元，扣费用后净节省40426.75元
+缩短期限：剩余199期，首期4680.89元，利息减少93091.32元，扣费用后净节省93091.32元
+每期利息 = 当期剩余本金 × 月利率
+提前还款后的本金 = 剩余本金 − 提前偿还本金
+净节省 = 原剩余利息 − 新剩余利息 − 提前还款费用
+等额本息，提前还款费用按0元计，实际执行以银行合同及结算规则为准
+提前还款方案比较
+剩余本金：800000 元
+月利率：0.3 %
+剩余期数：240 个月
+提前还本金：100000 元</pre></details></article><article class="gallery-card" id="duration"><h3>时长单位换算</h3><p class="gallery-question"><span>试着问</span>1.5小时是多少分钟？</p><p class="gallery-answer">时长换算：90 分钟
+
+1.5 × 60 = 90</p><a class="gallery-image" href="../assets/scenarios/duration-question-answer.webp" aria-label="打开时长单位换算完整截图"><img src="../assets/scenarios/duration-question-answer.webp" width="960" height="2087" loading="lazy" alt="时长单位换算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/duration-component-detail.webp"><img src="../assets/scenarios/duration-component-detail.webp" width="960" height="2087" loading="lazy" alt="时长单位换算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>时长换算：90 分钟
+
+1.5 × 60 = 90
+单位换算</pre></details></article><article class="gallery-card" id="fraction"><h3>最简分数</h3><p class="gallery-question"><span>试着问</span>6A是基准消耗的2.5倍，6S是基准的50%，6S是6A的几分之几？</p><p class="gallery-answer">6S消耗是6A的几分之几：1/5 
+按未舍入的比例约分
+0.5 ÷ 2.5 = 1/5</p><a class="gallery-image" href="../assets/scenarios/fraction-question-answer.webp" aria-label="打开最简分数完整截图"><img src="../assets/scenarios/fraction-question-answer.webp" width="960" height="2087" loading="lazy" alt="最简分数：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/fraction-component-detail.webp"><img src="../assets/scenarios/fraction-component-detail.webp" width="960" height="2087" loading="lazy" alt="最简分数的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>6S消耗是6A的几分之几：1/5 
+按未舍入的比例约分
+0.5 ÷ 2.5 = 1/5
+求最简分数</pre></details></article><article class="gallery-card" id="weight"><h3>重量单位换算</h3><p class="gallery-question"><span>试着问</span>2.5千克是多少克？</p><p class="gallery-answer">重量换算：2500 克
+
+2.5 × 1000 = 2500</p><a class="gallery-image" href="../assets/scenarios/weight-question-answer.webp" aria-label="打开重量单位换算完整截图"><img src="../assets/scenarios/weight-question-answer.webp" width="960" height="2087" loading="lazy" alt="重量单位换算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/weight-component-detail.webp"><img src="../assets/scenarios/weight-component-detail.webp" width="960" height="2087" loading="lazy" alt="重量单位换算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>重量换算：2500 克
+
+2.5 × 1000 = 2500
+单位换算</pre></details></article></div></section><section class="gallery-section" id="category-4"><h2>材料、裁切与搬运 <span>8 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="physical-cutting"><h3>二维裁切与余料</h3><p class="gallery-question"><span>试着问</span>原板1000×1000毫米，端头各留5毫米，锯缝3毫米，可旋转，要600×400、400×600、600×600毫米各一片，最少几张板？余料能否复用？</p><p class="gallery-answer">二维裁切与余料分配：2 张
+采购方案：受控逐片排版可行方案，未证明全局最少 
+几何面积下界：1 张</p><a class="gallery-image" href="../assets/scenarios/physical-cutting-question-answer.webp" aria-label="打开二维裁切与余料完整截图"><img src="../assets/scenarios/physical-cutting-question-answer.webp" width="960" height="2087" loading="lazy" alt="二维裁切与余料：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/physical-cutting-component-detail.webp"><img src="../assets/scenarios/physical-cutting-component-detail.webp" width="960" height="2087" loading="lazy" alt="二维裁切与余料的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>二维裁切与余料分配：2 张
+采购方案：受控逐片排版可行方案，未证明全局最少 
+几何面积下界：1 张
+需求1：原料2，位置(5,5)，400×600，旋转90度 毫米
+需求2：原料2，位置(408,5)，400×600 毫米
+需求3：原料1，位置(5,5)，600×600 毫米
+可复用余料1：原料1，387×990 毫米
+可复用余料2：原料1，600×387 毫米
+可复用余料3：原料2，400×387 毫米
+可复用余料4：原料2，184×600 毫米
+可复用余料5：原料2，587×387 毫米
+成品面积：840000 平方毫米
+可复用余料面积：1107699 平方毫米
+端边修整损耗：39800 平方毫米
+切缝面积损耗：12501 平方毫米
+矩形整料、整数毫米、直线贯通切割；允许旋转时逐片选择90度朝向，并复用本次产生的矩形余料。边缘修整宽度含该边锯缝，刀片允许越出余料边缘；按面积优先及最小剩余区域排版，只有达到面积下界才证明最少，其他方案不称全局最优
+材料、搬运与共享资源
+计算条件：使用本次明确的尺寸、工艺与日历规则 </pre></details></article><article class="gallery-card" id="material-grid-linear"><h3>同宽材料裁切</h3><p class="gallery-question"><span>试着问</span>同宽原料每根1000毫米，锯缝3毫米，需要600、300、497和500毫米各一段，末段刀片允许越出原料末端，最少几根，如何分配？</p><p class="gallery-answer">同宽长度裁切最少原料：2 根
+每根原料长：1000 毫米
+明确锯缝：3 毫米</p><a class="gallery-image" href="../assets/scenarios/material-grid-linear-question-answer.webp" aria-label="打开同宽材料裁切完整截图"><img src="../assets/scenarios/material-grid-linear-question-answer.webp" width="960" height="2087" loading="lazy" alt="同宽材料裁切：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/material-grid-linear-component-detail.webp"><img src="../assets/scenarios/material-grid-linear-component-detail.webp" width="960" height="2087" loading="lazy" alt="同宽材料裁切的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>同宽长度裁切最少原料：2 根
+每根原料长：1000 毫米
+明确锯缝：3 毫米
+需求段1：600 毫米
+需求段2：300 毫米
+需求段3：497 毫米
+需求段4：500 毫米
+原料1 · 切割分配：段4（500毫米）、段3（497毫米） 
+原料1 · 成品用量：997 毫米
+原料1 · 锯缝损耗：3 毫米
+原料1 · 剩余长度：0 毫米
+原料2 · 切割分配：段2（300毫米）、段1（600毫米） 
+原料2 · 成品用量：900 毫米
+原料2 · 锯缝损耗：6 毫米
+原料2 · 剩余长度：94 毫米
+成品长度合计：1897 毫米
+锯缝损耗合计：9 毫米
+余料长度合计：94 毫米
+按明确同宽原料与整数毫米需求优化，计入锯缝；末段有余料时切割分离，刀片允许越出原料末端，不含未知端头修整、包装或额外破损
+同宽材料长度裁切</pre></details></article><article class="gallery-card" id="global-15"><h3>家具能否放下</h3><p class="gallery-question"><span>试着问</span>家具80×60×190厘米，按所列空间和门洞净尺寸分别判断能否摆放、直立搬入。家具深度60厘米，门洞净高200厘米，门洞净宽75厘米，家具高度190厘米，通路净宽70厘米，空间净深80厘米，空间净高190厘米，空间净宽60厘米，家具宽度80厘米</p><p class="gallery-answer">家具摆放与搬入：见分项判断 
+家具宽 × 深 × 高：80 × 60 × 190 厘米
+可用宽 × 深 × 高：60 × 80 × 190 厘米</p><a class="gallery-image" href="../assets/scenarios/global-15-question-answer.webp" aria-label="打开家具能否放下完整截图"><img src="../assets/scenarios/global-15-question-answer.webp" width="960" height="2087" loading="lazy" alt="家具能否放下：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-15-component-detail.webp"><img src="../assets/scenarios/global-15-component-detail.webp" width="960" height="2087" loading="lazy" alt="家具能否放下的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>家具摆放与搬入：见分项判断 
+家具宽 × 深 × 高：80 × 60 × 190 厘米
+可用宽 × 深 × 高：60 × 80 × 190 厘米
+摆放结果：尺寸理论可放下 
+摆放朝向规则：保持直立，可转向 
+摆放方式1：60 × 80 × 190 厘米
+方式1宽深高余量：0 × 0 × 0 厘米
+方式1贴边提醒：至少一轴零余量，尺寸相等不代表实际有安装余量 
+门洞净宽 × 净高：75 × 200 厘米
+通路净宽：70 厘米
+通路条件：已明确直线通路 
+直立搬入判断：给定直线路径尺寸理论可通过 
+直立方式1横向 × 纵向：80 × 60 厘米
+方式1门洞宽/高余量：-5 × 10 厘米
+方式1通路宽余量：-10 厘米
+直立方式1结论：此方式不通过 
+直立方式2横向 × 纵向：60 × 80 厘米
+方式2门洞宽/高余量：15 × 10 厘米
+方式2通路宽余量：10 厘米
+直立方式2结论：理论通过 
+按给定长方体净尺寸判断，全部尺寸统一为厘米；摆放与搬入分别判断。零余量仅表示理论相等，倾斜、转弯、门框厚度及操作空间未由这些尺寸证明
+家具摆放与搬入
+家具深度：60 厘米
+门洞净高：200 厘米
+门洞净宽：75 厘米
+家具高度：190 厘米
+通路净宽：70 厘米
+空间净深：80 厘米
+空间净高：190 厘米
+空间净宽：60 厘米
+家具宽度：80 厘米</pre></details></article><article class="gallery-card" id="physical-moving"><h3>家具转弯搬运</h3><p class="gallery-question"><span>试着问</span>家具60×80×180厘米，净余量2厘米，可水平换向不倾斜。门90×210厘米厚20厘米，进出段各长300厘米，走廊宽100高220厘米，直角转角200×200厘米，操作高度250厘米，能搬进去吗？</p><p class="gallery-answer">家具倾斜与转弯路径：可行路径已验证 
+路径判断：给定矩形路线有保守可行路径 
+明确倾斜角：0 度</p><a class="gallery-image" href="../assets/scenarios/physical-moving-question-answer.webp" aria-label="打开家具转弯搬运完整截图"><img src="../assets/scenarios/physical-moving-question-answer.webp" width="960" height="2087" loading="lazy" alt="家具转弯搬运：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/physical-moving-component-detail.webp"><img src="../assets/scenarios/physical-moving-component-detail.webp" width="960" height="2087" loading="lazy" alt="家具转弯搬运的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>家具倾斜与转弯路径：可行路径已验证 
+路径判断：给定矩形路线有保守可行路径 
+明确倾斜角：0 度
+每侧操作余量：2 厘米
+门框厚度：20 厘米
+朝向1 · 横向包络：60 厘米
+朝向1 · 纵向包络：80 厘米
+朝向1 · 高度包络：180 厘米
+朝向1 · 倾斜操作所需高度：180 厘米
+朝向1 · 原地转弯包络直径：100 厘米
+朝向1 · 门净宽余量：26 厘米
+朝向1 · 门净高余量：26 厘米
+朝向1 · 走道宽余量：36 厘米
+朝向1 · 走道高余量：36 厘米
+朝向1 · 门前操作长度余量：116 厘米
+朝向1 · 门后操作长度余量：116 厘米
+朝向1 · 倾斜操作高度余量：66 厘米
+朝向1 · 转弯区宽余量：96 厘米
+朝向1 · 转弯区长余量：96 厘米
+朝向1 · 验证：保守条件全部满足 
+朝向2 · 横向包络：80 厘米
+朝向2 · 纵向包络：60 厘米
+朝向2 · 高度包络：180 厘米
+朝向2 · 倾斜操作所需高度：180 厘米
+朝向2 · 原地转弯包络直径：100 厘米
+朝向2 · 门净宽余量：6 厘米
+朝向2 · 门净高余量：26 厘米
+朝向2 · 走道宽余量：16 厘米
+朝向2 · 走道高余量：36 厘米
+朝向2 · 门前操作长度余量：116 厘米
+朝向2 · 门后操作长度余量：116 厘米
+朝向2 · 倾斜操作高度余量：66 厘米
+朝向2 · 转弯区宽余量：96 厘米
+朝向2 · 转弯区长余量：96 厘米
+朝向2 · 验证：保守条件全部满足 
+仅适用于明确无障碍且中心线相接的矩形直走道、净门框及矩形操作区；按给定倾斜角平移，进门前后各有完整家具包络及倾斜旋转对角线的操作长度，倾斜过程要求操作净高容纳对角线。90度转弯采用整件水平旋转包络圆完全放入转弯矩形的充分条件，不能通过此检查并不证明不存在更灵活搬法；门框厚度只作直通隧道，途中需保持给定包络
+材料、搬运与共享资源
+计算条件：使用本次明确的尺寸、工艺与日历规则 </pre></details></article><article class="gallery-card" id="material-grid-joint"><h3>带缝直铺采购</h3><p class="gallery-question"><span>试着问</span>按给定朝向直铺矩形区域，缝宽明确，边角料不复用，算行列、边缘裁片尺寸与整包装采购。缝宽5毫米，区域长1205毫米，每包片数6片，单片长600毫米，单片宽300毫米，区域宽605毫米</p><p class="gallery-answer">直铺整包装采购：1 包
+区域长：1205 毫米
+区域宽：605 毫米</p><a class="gallery-image" href="../assets/scenarios/material-grid-joint-question-answer.webp" aria-label="打开带缝直铺采购完整截图"><img src="../assets/scenarios/material-grid-joint-question-answer.webp" width="960" height="2087" loading="lazy" alt="带缝直铺采购：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/material-grid-joint-component-detail.webp"><img src="../assets/scenarios/material-grid-joint-component-detail.webp" width="960" height="2087" loading="lazy" alt="带缝直铺采购的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>直铺整包装采购：1 包
+区域长：1205 毫米
+区域宽：605 毫米
+单片长：600 毫米
+单片宽：300 毫米
+缝宽：5 毫米
+每包片数：6 片
+列数：2 列
+行数：2 行
+末列裁片长：600 毫米
+末行裁片宽：300 毫米
+铺设需要：4 片
+整包购买：1 包
+包装余片：2 片
+裁切废料：0 平方毫米
+按明确朝向直铺矩形区域，边角料不复用；每个网格位置使用一片材料，边缘裁片按实际尺寸计算，不含未明确的额外破损备用量
+直铺材料采购
+缝宽：5 毫米
+区域长：1205 毫米
+每包片数：6 片
+单片长：600 毫米
+单片宽：300 毫米
+区域宽：605 毫米</pre></details></article><article class="gallery-card" id="material-grid-compare"><h3>直铺朝向比较</h3><p class="gallery-question"><span>试着问</span>按给定朝向直铺矩形区域，缝宽明确，边角料不复用，算行列、边缘裁片尺寸与整包装采购。缝宽0毫米，区域长900毫米，每包片数3片，单片长600毫米，单片宽300毫米，区域宽600毫米</p><p class="gallery-answer">统一朝向最少采购：1 包
+原朝向 · 区域长：900 毫米
+原朝向 · 区域宽：600 毫米</p><a class="gallery-image" href="../assets/scenarios/material-grid-compare-question-answer.webp" aria-label="打开直铺朝向比较完整截图"><img src="../assets/scenarios/material-grid-compare-question-answer.webp" width="960" height="2087" loading="lazy" alt="直铺朝向比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/material-grid-compare-component-detail.webp"><img src="../assets/scenarios/material-grid-compare-component-detail.webp" width="960" height="2087" loading="lazy" alt="直铺朝向比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>统一朝向最少采购：1 包
+原朝向 · 区域长：900 毫米
+原朝向 · 区域宽：600 毫米
+原朝向 · 单片长：600 毫米
+原朝向 · 单片宽：300 毫米
+原朝向 · 缝宽：0 毫米
+原朝向 · 每包片数：3 片
+原朝向 · 列数：2 列
+原朝向 · 行数：2 行
+原朝向 · 末列裁片长：300 毫米
+原朝向 · 末行裁片宽：300 毫米
+原朝向 · 铺设需要：4 片
+原朝向 · 整包购买：2 包
+原朝向 · 包装余片：2 片
+原朝向 · 裁切废料：180000 平方毫米
+原朝向 · 采购建议：采购包数较多 
+旋转90度 · 区域长：900 毫米
+旋转90度 · 区域宽：600 毫米
+旋转90度 · 单片长：300 毫米
+旋转90度 · 单片宽：600 毫米
+旋转90度 · 缝宽：0 毫米
+旋转90度 · 每包片数：3 片
+旋转90度 · 列数：3 列
+旋转90度 · 行数：1 行
+旋转90度 · 末列裁片长：300 毫米
+旋转90度 · 末行裁片宽：600 毫米
+旋转90度 · 铺设需要：3 片
+旋转90度 · 整包购买：1 包
+旋转90度 · 包装余片：0 片
+旋转90度 · 裁切废料：0 平方毫米
+旋转90度 · 采购建议：推荐 
+两种朝向采购差：1 包
+仅比较两种统一朝向，先比较整包数再比较铺设片数；同包同片并列，不代表混合排版或余料复用的全局最优
+直铺材料采购
+缝宽：0 毫米
+区域长：900 毫米
+每包片数：3 片
+单片长：600 毫米
+单片宽：300 毫米
+区域宽：600 毫米</pre></details></article><article class="gallery-card" id="global-14"><h3>装修材料采购</h3><p class="gallery-question"><span>试着问</span>地面6米×4米，瓷砖60厘米见方，预留10%损耗，每箱8片，需要几箱？</p><p class="gallery-answer">整包装采购：10 箱
+实际面积：24 平方米
+含损耗与遍数：26.4 平方米</p><a class="gallery-image" href="../assets/scenarios/global-14-question-answer.webp" aria-label="打开装修材料采购完整截图"><img src="../assets/scenarios/global-14-question-answer.webp" width="960" height="2087" loading="lazy" alt="装修材料采购：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-14-component-detail.webp"><img src="../assets/scenarios/global-14-component-detail.webp" width="960" height="2087" loading="lazy" alt="装修材料采购的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>整包装采购：10 箱
+实际面积：24 平方米
+含损耗与遍数：26.4 平方米
+每片覆盖：0.36 平方米
+向上取整需：74 片
+实际购买：80 片
+比测算多：6 片
+按面积预留损耗、计算遍数，采购按整包装向上取整；不是排版切割优化
+整包装采购
+实际面积：24 平方米
+每件覆盖面积：0.36 平方米
+长度：6 米
+损耗比例：0.1 
+每箱数量：8 片
+宽度：4 米</pre></details></article><article class="gallery-card" id="physical-moving-blocked"><h3>较窄转角核验</h3><p class="gallery-question"><span>试着问</span>家具60×80×180厘米，净余量2厘米，可水平换向不倾斜。门90×210厘米厚20厘米，进出段各长300厘米，走廊宽100高220厘米，直角转角90×200厘米，操作高度250厘米，能搬进去吗？</p><p class="gallery-answer">家具倾斜与转弯路径：需核对路线 
+路径判断：当前保守检查未能证明可搬入，需要更完整路径测量 
+明确倾斜角：0 度</p><a class="gallery-image" href="../assets/scenarios/physical-moving-blocked-question-answer.webp" aria-label="打开较窄转角核验完整截图"><img src="../assets/scenarios/physical-moving-blocked-question-answer.webp" width="960" height="2087" loading="lazy" alt="较窄转角核验：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/physical-moving-blocked-component-detail.webp"><img src="../assets/scenarios/physical-moving-blocked-component-detail.webp" width="960" height="2087" loading="lazy" alt="较窄转角核验的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>家具倾斜与转弯路径：需核对路线 
+路径判断：当前保守检查未能证明可搬入，需要更完整路径测量 
+明确倾斜角：0 度
+每侧操作余量：2 厘米
+门框厚度：20 厘米
+朝向1 · 横向包络：60 厘米
+朝向1 · 纵向包络：80 厘米
+朝向1 · 高度包络：180 厘米
+朝向1 · 倾斜操作所需高度：180 厘米
+朝向1 · 原地转弯包络直径：100 厘米
+朝向1 · 门净宽余量：26 厘米
+朝向1 · 门净高余量：26 厘米
+朝向1 · 走道宽余量：36 厘米
+朝向1 · 走道高余量：36 厘米
+朝向1 · 门前操作长度余量：116 厘米
+朝向1 · 门后操作长度余量：116 厘米
+朝向1 · 倾斜操作高度余量：66 厘米
+朝向1 · 转弯区宽余量：-14 厘米
+朝向1 · 转弯区长余量：96 厘米
+朝向1 · 验证：部分保守条件不满足，不等于所有搬法均失败 
+朝向2 · 横向包络：80 厘米
+朝向2 · 纵向包络：60 厘米
+朝向2 · 高度包络：180 厘米
+朝向2 · 倾斜操作所需高度：180 厘米
+朝向2 · 原地转弯包络直径：100 厘米
+朝向2 · 门净宽余量：6 厘米
+朝向2 · 门净高余量：26 厘米
+朝向2 · 走道宽余量：16 厘米
+朝向2 · 走道高余量：36 厘米
+朝向2 · 门前操作长度余量：116 厘米
+朝向2 · 门后操作长度余量：116 厘米
+朝向2 · 倾斜操作高度余量：66 厘米
+朝向2 · 转弯区宽余量：-14 厘米
+朝向2 · 转弯区长余量：96 厘米
+朝向2 · 验证：部分保守条件不满足，不等于所有搬法均失败 
+仅适用于明确无障碍且中心线相接的矩形直走道、净门框及矩形操作区；按给定倾斜角平移，进门前后各有完整家具包络及倾斜旋转对角线的操作长度，倾斜过程要求操作净高容纳对角线。90度转弯采用整件水平旋转包络圆完全放入转弯矩形的充分条件，不能通过此检查并不证明不存在更灵活搬法；门框厚度只作直通隧道，途中需保持给定包络
+材料、搬运与共享资源
+计算条件：使用本次明确的尺寸、工艺与日历规则 </pre></details></article></div></section><section class="gallery-section" id="category-5"><h2>经营、备货与目标 <span>8 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="commerce-phased"><h3>分阶段用量预测</h3><p class="gallery-question"><span>试着问</span>2026年10月1日剩余30GB流量，前5天每天2GB，后5天每天1GB，之后固定每天3GB。第12天剩多少，已知阶段消耗多少，何时耗尽？</p><p class="gallery-answer">第12天可用剩余：9 GB
+前五天每日用量：2 GB/天
+前五天持续天数：5 天</p><a class="gallery-image" href="../assets/scenarios/commerce-phased-question-answer.webp" aria-label="打开分阶段用量预测完整截图"><img src="../assets/scenarios/commerce-phased-question-answer.webp" width="960" height="2087" loading="lazy" alt="分阶段用量预测：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/commerce-phased-component-detail.webp"><img src="../assets/scenarios/commerce-phased-component-detail.webp" width="960" height="2087" loading="lazy" alt="分阶段用量预测的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>第12天可用剩余：9 GB
+前五天每日用量：2 GB/天
+前五天持续天数：5 天
+前五天阶段末剩余：20 GB
+后五天每日用量：1 GB/天
+后五天持续天数：5 天
+后五天阶段末剩余：15 GB
+测算起点可用总量：30 GB
+已知阶段预计消耗：15 GB
+已知阶段末剩余：15 GB
+第12天预计剩余：9 GB
+从起点到预计耗尽：15 天
+预计耗尽所在日期：2026-10-16 
+阶段连续衔接，从起点第0天按明确日均用量预测；阶段消耗与未用量按用量预测，不含失效清零；可用剩余在失效日开始为0；后续未知不延长最后阶段；日期仅表示所在日
+按明确规则计算
+计算口径：按明确阶段用量预测 </pre></details></article><article class="gallery-card" id="global-34"><h3>加权成绩与目标分数</h3><p class="gallery-question"><span>试着问</span>平时80分占40%，期末占60%，两项满分100，期末按整数计分，总评至少60分，需要考多少、总评可到多少？</p><p class="gallery-answer">期末按给定步长至少：47 分
+当前已贡献：32 分
+加权满分：100 分</p><a class="gallery-image" href="../assets/scenarios/global-34-question-answer.webp" aria-label="打开加权成绩与目标分数完整截图"><img src="../assets/scenarios/global-34-question-answer.webp" width="960" height="2087" loading="lazy" alt="加权成绩与目标分数：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-34-component-detail.webp"><img src="../assets/scenarios/global-34-component-detail.webp" width="960" height="2087" loading="lazy" alt="加权成绩与目标分数的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>期末按给定步长至少：47 分
+当前已贡献：32 分
+加权满分：100 分
+目标总评：60 分
+目标还差：28 分
+期末理论至少：≈ 46.666667 分
+给定分数步长：1 分
+达到该成绩时总评：60.2 分
+权重合计100%，按给定各项满分计算；未知成绩不默填0，约数最多显示6位小数，给定步长从0开始计分
+平时：80 分，权重 40%，满分 100 分
+期末：未给成绩 分，权重 60%，满分 100 分
+加权成绩与目标
+成绩、权重与满分：平时：80 分，权重 40%，满分 100 分
+期末：未给成绩 分，权重 60%，满分 100 分 
+目标总评：60 分</pre></details></article><article class="gallery-card" id="global-28"><h3>接单报价倒推</h3><p class="gallery-question"><span>试着问</span>平台扣15%，PR返30%，想净赚800元，最低报价、实际到手和费用分别多少？</p><p class="gallery-answer">满足目标的最低报价：1223.53 元
+目标净收入：800 元
+实际到手：800 元</p><a class="gallery-image" href="../assets/scenarios/global-28-question-answer.webp" aria-label="打开接单报价倒推完整截图"><img src="../assets/scenarios/global-28-question-answer.webp" width="960" height="2087" loading="lazy" alt="接单报价倒推：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-28-component-detail.webp"><img src="../assets/scenarios/global-28-component-detail.webp" width="960" height="2087" loading="lazy" alt="接单报价倒推的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>满足目标的最低报价：1223.53 元
+目标净收入：800 元
+实际到手：800 元
+全部费用与成本：423.53 元
+超过目标：0 元
+到手占报价比例：≈ 65.38 %
+平台费：183.53 元
+平台费计费口径：按报价 1223.53 元 × 15% 
+PR返费：240 元
+PR返费计费口径：按最终实际到手 800 元 × 30% 
+报价以0.01元为步长，各项费用分别四舍五入到分；仅按给定收费与成本反验，不默认增加税费
+目标收入反推报价
+目标净收入：800 元
+费用口径：平台按报价15%，PR按最终到手30% 
+结算规则：每项分别四舍五入到分，报价步长0.01元 </pre></details></article><article class="gallery-card" id="commerce-unknown"><h3>未知后续用量</h3><p class="gallery-question"><span>试着问</span>2026年10月1日剩余30GB流量，前5天每天2GB，后5天每天1GB，后续用量未知。第12天剩多少，已知阶段消耗多少，何时耗尽？</p><p class="gallery-answer">第12天可用剩余：待确认 
+前五天每日用量：2 GB/天
+前五天持续天数：5 天</p><a class="gallery-image" href="../assets/scenarios/commerce-unknown-question-answer.webp" aria-label="打开未知后续用量完整截图"><img src="../assets/scenarios/commerce-unknown-question-answer.webp" width="960" height="2087" loading="lazy" alt="未知后续用量：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/commerce-unknown-component-detail.webp"><img src="../assets/scenarios/commerce-unknown-component-detail.webp" width="960" height="2087" loading="lazy" alt="未知后续用量的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>第12天可用剩余：待确认 
+前五天每日用量：2 GB/天
+前五天持续天数：5 天
+前五天阶段末剩余：20 GB
+后五天每日用量：1 GB/天
+后五天持续天数：5 天
+后五天阶段末剩余：15 GB
+测算起点可用总量：30 GB
+已知阶段预计消耗：15 GB
+已知阶段末剩余：15 GB
+第12天预计剩余：待确认 
+从起点到预计耗尽：待确认 
+阶段连续衔接，从起点第0天按明确日均用量预测；阶段消耗与未用量按用量预测，不含失效清零；可用剩余在失效日开始为0；后续未知不延长最后阶段；日期仅表示所在日
+按明确规则计算
+计算口径：按明确阶段用量预测 </pre></details></article><article class="gallery-card" id="global-36"><h3>流量与存储剩余</h3><p class="gallery-question"><span>试着问</span>还剩12GB流量，每天1.5GB，能用多久？目标再用10天，还差多少、每天最多用多少？</p><p class="gallery-answer">按固定用量可用时长：8 天
+当前库存：12 GB
+给定每日用量：1.5 GB/天</p><a class="gallery-image" href="../assets/scenarios/global-36-question-answer.webp" aria-label="打开流量与存储剩余完整截图"><img src="../assets/scenarios/global-36-question-answer.webp" width="960" height="2087" loading="lazy" alt="流量与存储剩余：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-36-component-detail.webp"><img src="../assets/scenarios/global-36-component-detail.webp" width="960" height="2087" loading="lazy" alt="流量与存储剩余的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按固定用量可用时长：8 天
+当前库存：12 GB
+给定每日用量：1.5 GB/天
+可完整覆盖天数：8 天
+目标使用天数：10 天
+目标所需总量：15 GB
+目标还差：3 GB
+现有库存用满目标时每天最多：1.2 GB/天
+按给定固定用量预测，用量变化会影响可用时长
+库存、用量与补货
+当前库存与日用量：12 GB，每天 1.5 GB
+补货与测算口径：目标10天 </pre></details></article><article class="gallery-card" id="global-38"><h3>消耗品备货</h3><p class="gallery-question"><span>试着问</span>纸尿裤库存120片，每天5片，一箱120片99元，提前3天补货，按30天测算消耗成本和实际补货付款，能用多久、何时补货？</p><p class="gallery-answer">按固定用量可用时长：24 天
+当前库存：120 片
+给定每日用量：5 片/天</p><a class="gallery-image" href="../assets/scenarios/global-38-question-answer.webp" aria-label="打开消耗品备货完整截图"><img src="../assets/scenarios/global-38-question-answer.webp" width="960" height="2087" loading="lazy" alt="消耗品备货：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-38-component-detail.webp"><img src="../assets/scenarios/global-38-component-detail.webp" width="960" height="2087" loading="lazy" alt="消耗品备货的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按固定用量可用时长：24 天
+当前库存：120 片
+给定每日用量：5 片/天
+可完整覆盖天数：24 天
+提前补货天数：3 天
+从起点到建议补货：21 天
+补货时预计剩余：15 片
+每包装数量：120 片
+每包装价格：99 元
+费用与补货测算周期：30 天
+周期预计消耗：150 片
+扣除库存后需补充：30 片
+按给定包装价折算消耗成本：123.75 元
+本周期整包装补货：1 箱
+本周期补货付款：99 元
+补货后周期末预计剩余：90 片
+按给定固定用量预测，用量变化会影响可用时长；消耗成本按给定包装价折算，补货付款先扣已有库存
+库存、用量与补货
+当前库存与日用量：120 片，每天 5 片
+补货与测算口径：按30天测算，已有库存先用 </pre></details></article><article class="gallery-card" id="scenario-rent-buy"><h3>租用与买断</h3><p class="gallery-question"><span>试着问</span>设备买断1200元，租用60元/天，不计其他费用和残值，多少天起买更划算？用30天差多少？</p><p class="gallery-answer">买断从此数量起更低：21 天
+查看数量：30 天
+租用：1800 元</p><a class="gallery-image" href="../assets/scenarios/scenario-rent-buy-question-answer.webp" aria-label="打开租用与买断完整截图"><img src="../assets/scenarios/scenario-rent-buy-question-answer.webp" width="960" height="2087" loading="lazy" alt="租用与买断：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/scenario-rent-buy-component-detail.webp"><img src="../assets/scenarios/scenario-rent-buy-component-detail.webp" width="960" height="2087" loading="lazy" alt="租用与买断的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>买断从此数量起更低：21 天
+查看数量：30 天
+租用：1800 元
+买断：1200 元
+两方案差额：600 元
+理论同价点：20 天
+按所给固定费用与单位费用测算，曲线为理论情景；未提供的费用或残值不虚构
+买断从此数量起更低
+方案一固定项：0 元
+方案二固定项：1200 元
+方案一单位费用：60 元
+方案二单位费用：0 元
+查看数量：30 天</pre></details></article><article class="gallery-card" id="global-29"><h3>项目盈亏平衡</h3><p class="gallery-question"><span>试着问</span>每月固定成本3000元，每单售价25元、成本10元，卖多少单不亏？300单利润多少？</p><p class="gallery-answer">不亏所需数量：200 单
+查看数量：300 单
+每件贡献：15 元</p><a class="gallery-image" href="../assets/scenarios/global-29-question-answer.webp" aria-label="打开项目盈亏平衡完整截图"><img src="../assets/scenarios/global-29-question-answer.webp" width="960" height="2087" loading="lazy" alt="项目盈亏平衡：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-29-component-detail.webp"><img src="../assets/scenarios/global-29-component-detail.webp" width="960" height="2087" loading="lazy" alt="项目盈亏平衡的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>不亏所需数量：200 单
+查看数量：300 单
+每件贡献：15 元
+该数量下利润：1500 元
+理论平衡点：200 单
+按所给固定费用与单位费用测算，曲线为理论情景；未提供的费用或残值不虚构
+不亏所需数量
+方案一固定项：0 元
+方案二固定项：3000 元
+方案一单位费用：25 元
+方案二单位费用：10 元
+查看数量：300 单</pre></details></article></div></section><section class="gallery-section" id="category-6"><h2>购物、订阅与权益 <span>14 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="global-37"><h3>云盘或软件订阅切换</h3><p class="gallery-question"><span>试着问</span>先月付3个月再改年付，和始终月付比，用12个月要付多少？两者均不退款</p><p class="gallery-answer">使用12个月，所列净支出最低：273 元
+本次使用时长：12 个月
+本次最终净支出比较：先月付后年付更低 </p><a class="gallery-image" href="../assets/scenarios/global-37-question-answer.webp" aria-label="打开云盘或软件订阅切换完整截图"><img src="../assets/scenarios/global-37-question-answer.webp" width="960" height="2087" loading="lazy" alt="云盘或软件订阅切换：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-37-component-detail.webp"><img src="../assets/scenarios/global-37-component-detail.webp" width="960" height="2087" loading="lazy" alt="云盘或软件订阅切换的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>使用12个月，所列净支出最低：273 元
+本次使用时长：12 个月
+本次最终净支出比较：先月付后年付更低 
+月付累计付款：300 元
+月付退款：0 元
+月付最终净支出：300 元
+月付比最低方案多付：27 元
+月付阶段1（订阅）：用12个月，每1个月 25元，支付12期，未用0个月 
+月付阶段1（订阅）一次性费用：0 元
+月付阶段1（订阅）退款口径：不退未用时长 
+先月付后年付累计付款：273 元
+先月付后年付退款：0 元
+先月付后年付最终净支出：273 元
+先月付后年付比最低方案多付：0 元
+先月付后年付阶段1（月付阶段）：用3个月，每1个月 25元，支付3期，未用0个月 
+先月付后年付阶段1（月付阶段）一次性费用：0 元
+先月付后年付阶段1（月付阶段）退款口径：不退未用时长 
+先月付后年付阶段2（年付阶段）：用9个月，每12个月 198元，支付1期，未用3个月 
+先月付后年付阶段2（年付阶段）一次性费用：0 元
+先月付后年付阶段2（年付阶段）退款口径：不退未用时长 
+先月付后年付首次净支出低于月付：11 个月
+每次开通或续费按整期付款，金额每期四舍五入到分；比较仅限给定费用与相同权益；曲线为每个整数使用月后停止的情景，按给定规则延长最后阶段，不是历史账单；首次更低不保证续费后一直更低
+订阅付款与净支出比较
+使用时长：12 个月
+付款方案：月付；先月付3个月再年付 
+退款规则：不退款 </pre></details></article><article class="gallery-card" id="global-5"><h3>会员价回本</h3><p class="gallery-question"><span>试着问</span>会员年费99元，每单省6元，我已经买了12单，还要买几单回本？</p><p class="gallery-answer">距离回本还需：5 单
+
+会员回本进度</p><a class="gallery-image" href="../assets/scenarios/global-5-question-answer.webp" aria-label="打开会员价回本完整截图"><img src="../assets/scenarios/global-5-question-answer.webp" width="960" height="2087" loading="lazy" alt="会员价回本：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-5-component-detail.webp"><img src="../assets/scenarios/global-5-component-detail.webp" width="960" height="2087" loading="lazy" alt="会员价回本的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>距离回本还需：5 单
+
+会员回本进度
+当前 72 元 / 目标 99 元
+还需 5 单
+会员回本进度
+当前 72 元 / 目标 99 元
+还需 5 单
+距离回本还需
+会员年费：99 元
+每单节省：6 元
+已购：12 单</pre></details></article><article class="gallery-card" id="recharge"><h3>充值档位比价</h3><p class="gallery-question"><span>试着问</span>充值档位1/6/30/68/128/198/328/648元，分别得10/60/316/718/1358/2108/3496/6916点券，哪个每元点券最多？</p><p class="gallery-answer">648元套餐最划算：10.6728 点券/元
+包含额外赠送
+1元套餐：1元，基础10，赠送0，总量10点券，</p><a class="gallery-image" href="../assets/scenarios/recharge-question-answer.webp" aria-label="打开充值档位比价完整截图"><img src="../assets/scenarios/recharge-question-answer.webp" width="960" height="2087" loading="lazy" alt="充值档位比价：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/recharge-component-detail.webp"><img src="../assets/scenarios/recharge-component-detail.webp" width="960" height="2087" loading="lazy" alt="充值档位比价的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>648元套餐最划算：10.6728 点券/元
+包含额外赠送
+1元套餐：1元，基础10，赠送0，总量10点券，
+6元套餐：6元，基础60，赠送0，总量60点券，
+30元套餐：30元，基础300，赠送16，总量316点券，300 + 赠送16 = 316点券
+68元套餐：68元，基础680，赠送38，总量718点券，680 + 赠送38 = 718点券
+128元套餐：128元，基础1280，赠送78，总量1358点券，1280 + 赠送78 = 1358点券
+198元套餐：198元，基础1980，赠送128，总量2108点券，1980 + 赠送128 = 2108点券
+328元套餐：328元，基础3280，赠送216，总量3496点券，3280 + 赠送216 = 3496点券
+648元套餐：648元，基础6480，赠送436，总量6916点券，6480 + 赠送436 = 6916点券
+充值性价比</pre></details></article><article class="gallery-card" id="rights-normal"><h3>剩余权益与可用次数</h3><p class="gallery-question"><span>试着问</span>课程1800元买20节赠4，已上9先用付费课；未用付费课按90元退，赠课不退，扣100元手续费，能退多少，还剩多少？</p><p class="gallery-answer">实际可退金额：890 元
+原付费权益：20 节
+原赠送权益：4 节</p><a class="gallery-image" href="../assets/scenarios/rights-normal-question-answer.webp" aria-label="打开剩余权益与可用次数完整截图"><img src="../assets/scenarios/rights-normal-question-answer.webp" width="960" height="2087" loading="lazy" alt="剩余权益与可用次数：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/rights-normal-component-detail.webp"><img src="../assets/scenarios/rights-normal-component-detail.webp" width="960" height="2087" loading="lazy" alt="剩余权益与可用次数的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>实际可退金额：890 元
+原付费权益：20 节
+原赠送权益：4 节
+已使用：9 节
+剩余权益合计：15 节
+剩余付费权益：11 节
+剩余赠送权益：4 节
+原实际付款：1800 元
+给定退款计价：90 元/节
+扣费前可退金额：990 元
+退款手续费：100 元
+净退款：890 元
+先使用付费权益；退款：仅剩余付费权益按给定单价；抵扣：本题未计算；退款与抵扣分别为可选情景，不同时领取，不把赠送均价当默认退款价；金额分别四舍五入到分，未涉及其他费用不推定商家实际收费，未知费用不补0
+剩余权益、退款与抵扣
+原权益与已用情况：课程1800元买20节赠4，已上9先用付费课；未用付费课按90元退，赠课不退，扣100元手续费，能退多少，还剩多少？ </pre></details></article><article class="gallery-card" id="bundle"><h3>多人套餐最优组合</h3><p class="gallery-question"><span>试着问</span>充值1/6/30/68/128/198/328/648元得10/60/316/718/1358/2108/3496/6916点券。每人需4590点券，无余额不限购，3、4、5人合购最低分别多少钱，均摊多少？</p><p class="gallery-answer">3人拼单最低总支出：1293.00 元
+
+3人拼单：1293.00元，基础未知，赠送未知，总量13770点券，1元套餐 × 1 + 30元套餐 × 2 + 128元套餐 × 2 + 328元套餐 × 1 + 648元套餐 × 1</p><a class="gallery-image" href="../assets/scenarios/bundle-question-answer.webp" aria-label="打开多人套餐最优组合完整截图"><img src="../assets/scenarios/bundle-question-answer.webp" width="960" height="2087" loading="lazy" alt="多人套餐最优组合：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/bundle-component-detail.webp"><img src="../assets/scenarios/bundle-component-detail.webp" width="960" height="2087" loading="lazy" alt="多人套餐最优组合的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>3人拼单最低总支出：1293.00 元
+
+3人拼单：1293.00元，基础未知，赠送未知，总量13770点券，1元套餐 × 1 + 30元套餐 × 2 + 128元套餐 × 2 + 328元套餐 × 1 + 648元套餐 × 1
+总需求 13770点券，已有投入 0点券
+本次获得 13770点券，剩余 0点券
+均摊：3人各431.00元
+4人拼单：1722.00元，基础未知，赠送未知，总量18362点券，30元套餐 × 1 + 68元套餐 × 1 + 328元套餐 × 1 + 648元套餐 × 2
+总需求 18360点券，已有投入 0点券
+本次获得 18362点券，剩余 2点券
+均摊：4人各430.50元
+5人拼单：2152.00元，基础未知，赠送未知，总量22952点券，1元套餐 × 2 + 198元套餐 × 1 + 328元套餐 × 2 + 648元套餐 × 2
+总需求 22950点券，已有投入 0点券
+本次获得 22952点券，剩余 2点券
+均摊：5人各430.40元
+多人套餐最优组合
+组合原始条件
+1元套餐：10点券/1元，限购不限，来源
+6元套餐：60点券/6元，限购不限，来源
+30元套餐：316点券/30元，限购不限，来源
+68元套餐：718点券/68元，限购不限，来源
+128元套餐：1358点券/128元，限购不限，来源
+198元套餐：2108点券/198元，限购不限，来源
+328元套餐：3496点券/328元，限购不限，来源
+648元套餐：6916点券/648元，限购不限，来源
+3人拼单：各份需求4590,4590,4590，付费人数3，已有投入0，分摊equal
+4人拼单：各份需求4590,4590,4590,4590，付费人数4，已有投入0，分摊equal
+5人拼单：各份需求4590,4590,4590,4590,4590，付费人数5，已有投入0，分摊equal</pre></details></article><article class="gallery-card" id="global-2"><h3>大包装是否真的省钱</h3><p class="gallery-question"><span>试着问</span>小包装500毫升40元，大包装1000毫升60元，每天用10毫升，都在开封30天后失效，未来90天先买一瓶哪个实际成本更低？本期用不完多少？</p><p class="gallery-answer">按预计实际使用成本更低：小包装 
+小包装 · 本次付款：40 元
+小包装 · 预计实际使用：300 毫升</p><a class="gallery-image" href="../assets/scenarios/global-2-question-answer.webp" aria-label="打开大包装是否真的省钱完整截图"><img src="../assets/scenarios/global-2-question-answer.webp" width="960" height="2087" loading="lazy" alt="大包装是否真的省钱：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-2-component-detail.webp"><img src="../assets/scenarios/global-2-component-detail.webp" width="960" height="2087" loading="lazy" alt="大包装是否真的省钱的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按预计实际使用成本更低：小包装 
+小包装 · 本次付款：40 元
+小包装 · 预计实际使用：300 毫升
+小包装 · 本期未使用：200 毫升
+小包装 · 每100毫升实际成本：13.33 元
+大包装 · 本次付款：60 元
+大包装 · 预计实际使用：300 毫升
+大包装 · 本期未使用：700 毫升
+大包装 · 每100毫升实际成本：20 元
+按明确使用速度、期限与可用比例测算；本期未使用量不等于全部已过期，不给余量虚构现金价值
+按预计实际使用成本更低
+每日预计使用：10 毫升
+比较周期：90 天
+单位成本比较份量：100 毫升
+小包装 · 付款：40 元
+小包装 · 购买数量：500 毫升
+小包装 · 有效使用期限：30 天
+大包装 · 付款：60 元
+大包装 · 购买数量：1000 毫升
+大包装 · 有效使用期限：30 天</pre></details></article><article class="gallery-card" id="commerce-daily"><h3>按天订阅与退款</h3><p class="gallery-question"><span>试着问</span>2026年10月1日至10月31日（最后一天不含），同一订阅先用30天90元的日包10天，后切换7天14元的日包20天。每阶段都整期购买、最后一期未用天数按天比例退款，没有其他费用。付款、退款、净支出各多少？</p><p class="gallery-answer">按日切换订阅的新增净支出：70 元
+切换方案历史已付金额：0 元
+切换方案 · 先用30天日包使用日期：2026-10-01 至 2026-10-11（末日不含） </p><a class="gallery-image" href="../assets/scenarios/commerce-daily-question-answer.webp" aria-label="打开按天订阅与退款完整截图"><img src="../assets/scenarios/commerce-daily-question-answer.webp" width="960" height="2087" loading="lazy" alt="按天订阅与退款：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/commerce-daily-component-detail.webp"><img src="../assets/scenarios/commerce-daily-component-detail.webp" width="960" height="2087" loading="lazy" alt="按天订阅与退款的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按日切换订阅的新增净支出：70 元
+切换方案历史已付金额：0 元
+切换方案 · 先用30天日包使用日期：2026-10-01 至 2026-10-11（末日不含） 
+切换方案 · 先用30天日包新购覆盖天数：10 天
+切换方案 · 先用30天日包付款期数：1 期
+切换方案 · 先用30天日包累计付款：90 元
+切换方案 · 先用30天日包退款或取消补款：60 元
+切换方案 · 再用7天日包使用日期：2026-10-11 至 2026-10-31（末日不含） 
+切换方案 · 再用7天日包新购覆盖天数：20 天
+切换方案 · 再用7天日包付款期数：3 期
+切换方案 · 再用7天日包累计付款：42 元
+切换方案 · 再用7天日包退款或取消补款：2 元
+切换方案本次新增付款：132 元
+切换方案本次全部退款：62 元
+切换方案从现在新增净支出：70 元
+切换方案含历史付款累计净支出：70 元
+方案比较：切换方案新增净支出最低 
+日期均为起日含、末日不含；既有权益仅覆盖第一阶段，不猜转让或自动叠加；历史已付与本次新增现金分开；日费退款仅按明确商家规则
+按明确规则计算
+计算口径：按实际日期与明确日包规则 </pre></details></article><article class="gallery-card" id="global-0"><h3>满减、优惠券叠加</h3><p class="gallery-question"><span>试着问</span>原价298元，再打9折；凑12元后满300减40，先满减再打9折，哪种划算？</p><p class="gallery-answer">凑单可少付：25.2 元
+按当前口径，凑单的数值更低
+凑单前后</p><a class="gallery-image" href="../assets/scenarios/global-0-question-answer.webp" aria-label="打开满减、优惠券叠加完整截图"><img src="../assets/scenarios/global-0-question-answer.webp" width="960" height="2087" loading="lazy" alt="满减、优惠券叠加：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-0-component-detail.webp"><img src="../assets/scenarios/global-0-component-detail.webp" width="960" height="2087" loading="lazy" alt="满减、优惠券叠加的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>凑单可少付：25.2 元
+按当前口径，凑单的数值更低
+凑单前后
+不凑单：268.2 元
+凑单：243 元
+凑单前后
+不凑单：268.2 元
+凑单：243 元
+凑单可少付
+商品原价：298 元
+凑单商品：12 元
+满减门槛：300 元
+满减金额：40 元
+折扣：9 折</pre></details></article><article class="gallery-card" id="global-35"><h3>课程套餐实际成本</h3><p class="gallery-question"><span>试着问</span>30节送5节套餐3000元，预计只上20节，与每节170元、只买20节相比，实际每节成本多少，哪个便宜？不计时间期限，无退款和转让价值</p><p class="gallery-answer">按预计实际使用成本更低：35节套餐 
+35节套餐 · 本次付款：3000 元
+35节套餐 · 预计实际使用：20 节</p><a class="gallery-image" href="../assets/scenarios/global-35-question-answer.webp" aria-label="打开课程套餐实际成本完整截图"><img src="../assets/scenarios/global-35-question-answer.webp" width="960" height="2087" loading="lazy" alt="课程套餐实际成本：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-35-component-detail.webp"><img src="../assets/scenarios/global-35-component-detail.webp" width="960" height="2087" loading="lazy" alt="课程套餐实际成本的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按预计实际使用成本更低：35节套餐 
+35节套餐 · 本次付款：3000 元
+35节套餐 · 预计实际使用：20 节
+35节套餐 · 本期未使用：15 节
+35节套餐 · 每1节实际成本：150 元
+按次购买20节 · 本次付款：3400 元
+按次购买20节 · 预计实际使用：20 节
+按次购买20节 · 本期未使用：0 节
+按次购买20节 · 每1节实际成本：170 元
+按明确使用速度、期限与可用比例测算；本期未使用量不等于全部已过期，不给余量虚构现金价值
+按预计实际使用成本更低
+预计使用次数：20 节
+35节套餐 · 付款：3000 元
+35节套餐 · 购买数量：35 节
+按次购买20节 · 付款：3400 元
+按次购买20节 · 购买数量：20 节</pre></details></article><article class="gallery-card" id="cart-advanced-split"><h3>购物数量拆单</h3><p class="gallery-question"><span>试着问</span>购物车保温饭盒买4件，明确可按1件步长拆到两店，各店一单。A店10元最多2件，满20减20一次，B店9元无券。运费均0，怎么买最便宜？</p><p class="gallery-answer">最低总实付：18 元
+A店 · 实付 0 元
+保温饭盒 2件 · 20 元</p><a class="gallery-image" href="../assets/scenarios/cart-advanced-split-question-answer.webp" aria-label="打开购物数量拆单完整截图"><img src="../assets/scenarios/cart-advanced-split-question-answer.webp" width="960" height="2087" loading="lazy" alt="购物数量拆单：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/cart-advanced-split-component-detail.webp"><img src="../assets/scenarios/cart-advanced-split-component-detail.webp" width="960" height="2087" loading="lazy" alt="购物数量拆单的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>最低总实付：18 元
+A店 · 实付 0 元
+保温饭盒 2件 · 20 元
+商品小计 20 元，优惠后 0 元，运费 0 元
+采用优惠：满20减20
+B店 · 实付 18 元
+保温饭盒 2件 · 18 元
+商品小计 18 元，优惠后 18 元，运费 0 元
+采用优惠：无
+已穷举给定拆分步长、单券次数与平台券顺序内的全部组合，共4个优惠候选；不代表未给出的优惠或任意拆单
+全部在B店买：36 元，比推荐多花 18 元
+本次购物车条件
+保温饭盒采购 4件，允许按1步长拆数量
+A店
+保温饭盒单价 10 元/件，可买上限2件
+运费 0 元
+满20减20 · 当时商品金额满20元减20元，最多抵至零
+B店
+保温饭盒单价 9 元/件
+运费 0 元
+无优惠券
+购物车联合优惠
+下单规则：按1件步长拆数量，每店一单 </pre></details></article><article class="gallery-card" id="global-4"><h3>跨平台购物车</h3><p class="gallery-question"><span>试着问</span>纸巾和洗衣液各买1件，跨平台购物车怎么下单最省？A店60/50元、运费8元，原价满100包邮并减20；B店40/60元、运费6元、无优惠</p><p class="gallery-answer">最低总实付：90 元
+A店 · 实付 90 元
+纸巾 1件 · 60 元</p><a class="gallery-image" href="../assets/scenarios/global-4-question-answer.webp" aria-label="打开跨平台购物车完整截图"><img src="../assets/scenarios/global-4-question-answer.webp" width="960" height="2087" loading="lazy" alt="跨平台购物车：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-4-component-detail.webp"><img src="../assets/scenarios/global-4-component-detail.webp" width="960" height="2087" loading="lazy" alt="跨平台购物车的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>最低总实付：90 元
+A店 · 实付 90 元
+纸巾 1件 · 60 元
+洗衣液 1件 · 50 元
+商品小计 110 元，优惠后 90 元，运费 0 元
+采用优惠：满100减20
+按完整所给规则枚举下单分配；同价时选下单店铺较少的方案
+全部在B店买：106 元，比推荐多花 16 元
+分开买最低：104 元，比推荐多花 14 元
+本次购物车条件
+纸巾采购 1件
+洗衣液采购 1件
+A店
+纸巾单价 60 元/件
+洗衣液单价 50 元/件
+运费 8 元
+按商品原价满100元包邮
+满100减20 · 商品原价满100元减20元，不得超过当时金额
+B店
+纸巾单价 40 元/件
+洗衣液单价 60 元/件
+运费 6 元
+无优惠券
+购物车最低总实付
+A店纸巾单价：60 元
+A店洗衣液单价：50 元
+B店纸巾单价：40 元
+B店洗衣液单价：60 元
+采购数量：纸巾和洗衣液各1件 
+A店优惠与运费：商品原价满100减20且包邮，否则运费8元，无其他折扣 
+B店优惠与运费：无优惠，运费6元 </pre></details></article><article class="gallery-card" id="global-1"><h3>退货后的优惠重算</h3><p class="gallery-question"><span>试着问</span>外套200元和鞋100元，先8折再按原价满200减20，退鞋保留外套。退货按保留商品重算，原运费0，不另收运费和退货费，负退款补款。原付款、退款和最终支出各多少？</p><p class="gallery-answer">退货后的退款与净支出：80 元
+外套购买数量：1 件
+外套退货数量：0 件</p><a class="gallery-image" href="../assets/scenarios/global-1-question-answer.webp" aria-label="打开退货后的优惠重算完整截图"><img src="../assets/scenarios/global-1-question-answer.webp" width="960" height="2087" loading="lazy" alt="退货后的优惠重算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-1-component-detail.webp"><img src="../assets/scenarios/global-1-component-detail.webp" width="960" height="2087" loading="lazy" alt="退货后的优惠重算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>退货后的退款与净支出：80 元
+外套购买数量：1 件
+外套退货数量：0 件
+鞋购买数量：1 双
+鞋退货数量：1 双
+原订单商品实付：220 元
+原订单含运费付款：220 元
+保留商品按给定规则计价：140 元
+优惠追回相对原比例分摊：0 元
+本次净退款：80 元
+退货后累计净支出：140 元
+原优惠执行顺序：八折 → 满200减20 
+退货后仍满足的优惠：八折 → 满200减20 
+优惠按给定顺序逐项核验；原价与当时小计门槛分开；仅使用明确的退货、运费和扣费规则，负退款表示需要补款
+按明确规则计算
+计算口径：按保留商品重算退款 </pre></details></article><article class="gallery-card" id="cart-advanced-platform"><h3>门店与平台优惠联动</h3><p class="gallery-question"><span>试着问</span>购物车保温饭盒60元只在A店，清洁用品40元只在B店，均买1件。A店可选减10一次，B无券；门店券后平台两店当前商品金额满100减30一次。运费均0，无其他费用，怎样总付款最少？</p><p class="gallery-answer">最低总实付：70 元
+A店 · 实付 42 元
+保温饭盒 1件 · 60 元</p><a class="gallery-image" href="../assets/scenarios/cart-advanced-platform-question-answer.webp" aria-label="打开门店与平台优惠联动完整截图"><img src="../assets/scenarios/cart-advanced-platform-question-answer.webp" width="960" height="2087" loading="lazy" alt="门店与平台优惠联动：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/cart-advanced-platform-component-detail.webp"><img src="../assets/scenarios/cart-advanced-platform-component-detail.webp" width="960" height="2087" loading="lazy" alt="门店与平台优惠联动的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>最低总实付：70 元
+A店 · 实付 42 元
+保温饭盒 1件 · 60 元
+商品小计 60 元，优惠后 42 元，运费 0 元
+采用优惠：无
+B店 · 实付 28 元
+清洁用品 1件 · 40 元
+商品小计 40 元，优惠后 28 元，运费 0 元
+采用优惠：无
+平台跨店优惠：30 元，已计入各店优惠后金额
+采用平台优惠：合格店商品优惠后满100减30
+已穷举给定拆分步长、单券次数与平台券顺序内的全部组合，共4个优惠候选；不代表未给出的优惠或任意拆单
+本次购物车条件
+保温饭盒采购 1件
+清洁用品采购 1件
+A店
+保温饭盒单价 60 元/件
+运费 0 元
+店铺可选无门槛减10 · 当时商品金额满0元减10元，最多抵至零
+包邮门槛在平台券前核验
+B店
+清洁用品单价 40 元/件
+运费 0 元
+无优惠券
+包邮门槛在平台券前核验
+平台券 合格店商品优惠后满100减30 · 合格店 A店、B店，满100减30，在门店券后执行
+购物车联合优惠
+下单规则：门店优惠后核验平台门槛，运费均0 </pre></details></article><article class="gallery-card" id="global-3"><h3>预售定金与尾款</h3><p class="gallery-question"><span>试着问</span>商品599元，定金50抵80，尾款券减30，返现20，免运费，已付定金还没付尾款且返现没到账，最终净支出及还需付款多少？定金10月2日、尾款10月10日、返现10月15日</p><p class="gallery-answer">返现后预计净支出：519 元
+定金实际付出：50 元
+定金抵扣额：80 元</p><a class="gallery-image" href="../assets/scenarios/global-3-question-answer.webp" aria-label="打开预售定金与尾款完整截图"><img src="../assets/scenarios/global-3-question-answer.webp" width="960" height="2087" loading="lazy" alt="预售定金与尾款：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-3-component-detail.webp"><img src="../assets/scenarios/global-3-component-detail.webp" width="960" height="2087" loading="lazy" alt="预售定金与尾款的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>返现后预计净支出：519 元
+定金实际付出：50 元
+定金抵扣额：80 元
+商品尾款：489 元
+运费：0 元
+返现前付款合计：539 元
+返现金额：20 元
+已付出金额：50 元
+还需付出：489 元
+定金：已付 · 2026-10-02
+尾款及运费：待付 · 2026-10-10
+返现：待到账 · 2026-10-15
+定金抵扣额用于计算尾款，不等于实际付出的定金；未到账返现仅计入预计净支出，不当成已收现金
+返现后预计净支出
+返现：20 元
+返现到账状态：未到账 
+实际定金：50 元
+定金抵扣额：80 元
+定金付款状态：已付 
+商品价格：599 元
+尾款券：30 元
+尾款付款状态：未付 
+尾款日期：2026-10-10 
+返现日期：2026-10-15 
+定金日期：2026-10-02 </pre></details></article></div></section><section class="gallery-section" id="category-7"><h2>金融与保险 <span>23 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="global-23"><h3>不同贷款方案比较</h3><p class="gallery-question"><span>试着问</span>比较给定固定月利率与期限的两种等额本息方案，额外费用均为另付现金，月供、利息和总付款分别是多少。方案A · 借款本金12000元，方案A · 月利率1%，方案A · 还款期数12个月，方案A · 前期额外现金费用0元，方案A · 每期额外现金费用0元，方案A · 还款方式等额本息，方案B · 借款本金12000元，方案B · 月利率1%，方案B · 还款期数24个月，方案B · 前期额外现金费用0元，方案B · 每期额外现金费用0元，方案B · 还款方式等额本息</p><p class="gallery-answer">贷款方案比较：方案A总借款成本最低 
+比较结论：方案A总借款成本最低 
+方案A · 借款本金：12000 元</p><a class="gallery-image" href="../assets/scenarios/global-23-question-answer.webp" aria-label="打开不同贷款方案比较完整截图"><img src="../assets/scenarios/global-23-question-answer.webp" width="960" height="2087" loading="lazy" alt="不同贷款方案比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-23-component-detail.webp"><img src="../assets/scenarios/global-23-component-detail.webp" width="960" height="2087" loading="lazy" alt="不同贷款方案比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款方案比较：方案A总借款成本最低 
+比较结论：方案A总借款成本最低 
+方案A · 借款本金：12000 元
+方案A · 还款期数：12 个月
+方案A · 月利率：1 %
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：1066.19 元
+方案A · 末期还本息：1066.19 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：1066.19 元
+方案A · 末期付款：1066.19 元
+方案A · 总利息：794.23 元
+方案A · 还本息合计：12794.23 元
+方案A · 额外费用合计：0 元
+方案A · 总借款成本：794.23 元
+方案A · 总付款：12794.23 元
+方案B · 借款本金：12000 元
+方案B · 还款期数：24 个月
+方案B · 月利率：1 %
+方案B · 还款方式：等额本息 
+方案B · 首期还本息：564.88 元
+方案B · 末期还本息：564.88 元
+方案B · 每期额外费用：0 元
+方案B · 前期额外费用：0 元
+方案B · 首期付款：564.88 元
+方案B · 末期付款：564.88 元
+方案B · 总利息：1557.16 元
+方案B · 还本息合计：13557.16 元
+方案B · 额外费用合计：0 元
+方案B · 总借款成本：1557.16 元
+方案B · 总付款：13557.16 元
+方案B相比方案A总付款差额：762.93 元
+按给定固定月利率及还款方式测算，中间保留精度、展示到分，末期结清；额外费用为另付现金，只指其它现金费用，不含已指定融资手续费，未知费用不补0，不按低月供直接推荐
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 月利率：1 %
+方案A · 还款期数：12 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 还款方式：等额本息 
+方案B · 借款本金：12000 元
+方案B · 月利率：1 %
+方案B · 还款期数：24 个月
+方案B · 前期额外现金费用：0 元
+方案B · 每期额外现金费用：0 元
+方案B · 还款方式：等额本息 </pre></details></article><article class="gallery-card" id="global-25"><h3>保险方案比较</h3><p class="gallery-question"><span>试着问</span>两份保险均为单次适用费用，先扣免赔再按比例赔。A保费100、免赔500、赔100%、赔付封顶1000；B保费300、免赔0、赔50%、无封顶。无既往赔付，费用400、1000、2000元时，赔付、自付和含保费总支出分别多少？</p><p class="gallery-answer">保险方案比较：按各费用情景分别比较 
+方案A · 比较范围保费：100 元
+方案A · 免赔额：500 元</p><a class="gallery-image" href="../assets/scenarios/global-25-question-answer.webp" aria-label="打开保险方案比较完整截图"><img src="../assets/scenarios/global-25-question-answer.webp" width="960" height="2087" loading="lazy" alt="保险方案比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-25-component-detail.webp"><img src="../assets/scenarios/global-25-component-detail.webp" width="960" height="2087" loading="lazy" alt="保险方案比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>保险方案比较：按各费用情景分别比较 
+方案A · 比较范围保费：100 元
+方案A · 免赔额：500 元
+方案A · 免赔后赔付比例：100 %
+方案A · 赔付封顶：1000 元
+方案B · 比较范围保费：300 元
+方案B · 免赔额：0 元
+方案B · 免赔后赔付比例：50 %
+方案B · 赔付封顶：明确无封顶 
+情景1 · 适用费用：400 元
+情景1 · 方案A · 赔付：0 元
+情景1 · 方案A · 自付：400 元
+情景1 · 方案A · 含保费总支出：500 元
+情景1 · 方案B · 赔付：200 元
+情景1 · 方案B · 自付：200 元
+情景1 · 方案B · 含保费总支出：500 元
+情景1 · 比较结论：方案A、方案B总支出并列最低 
+情景2 · 适用费用：1000 元
+情景2 · 方案A · 赔付：500 元
+情景2 · 方案A · 自付：500 元
+情景2 · 方案A · 含保费总支出：600 元
+情景2 · 方案B · 赔付：500 元
+情景2 · 方案B · 自付：500 元
+情景2 · 方案B · 含保费总支出：800 元
+情景2 · 比较结论：方案A本情景总支出最低 
+情景3 · 适用费用：2000 元
+情景3 · 方案A · 赔付：1000 元
+情景3 · 方案A · 自付：1000 元
+情景3 · 方案A · 含保费总支出：1100 元
+情景3 · 方案B · 赔付：1000 元
+情景3 · 方案B · 自付：1000 元
+情景3 · 方案B · 含保费总支出：1300 元
+情景3 · 比较结论：方案A本情景总支出最低 
+方案A与方案B · 理论交点：约400元、约600元、约2400元 
+仅按同一比较范围内一笔适用费用、给定免赔及免赔后比例测算，赔付到分；含保费支出与自付分开，未知条件不补0。理论交点未按结算到分，不表示唯一实付持平点或永久更省，不预测风险概率，也未推定其他保障、除外费用或年度剩余额度
+保险方案比较
+方案A · 比较范围保费：100 元
+方案A · 免赔额：500 元
+方案A · 免赔后赔付比例：100 %
+方案A · 赔付封顶：1000 元
+方案B · 比较范围保费：300 元
+方案B · 免赔额：0 元
+方案B · 免赔后赔付比例：50 %
+情景1 · 适用费用：400 元
+情景2 · 适用费用：1000 元
+情景3 · 适用费用：2000 元</pre></details></article><article class="gallery-card" id="insurance-unknown"><h3>保险条件待确认</h3><p class="gallery-question"><span>试着问</span>比较同一范围内一笔适用费用的保险赔付、自付与含保费支出，各个给定费用情景下哪个支出较低。方案A · 比较范围保费100元，方案A · 免赔额500元，方案A · 免赔后赔付比例100%，方案B · 比较范围保费300元，方案B · 免赔额0元，方案B · 免赔后赔付比例50%，情景1 · 适用费用400元，情景2 · 适用费用1000元，情景3 · 适用费用2000元</p><p class="gallery-answer">保险方案比较：按各费用情景分别比较 
+方案A · 比较范围保费：100 元
+方案A · 免赔额：500 元</p><a class="gallery-image" href="../assets/scenarios/insurance-unknown-question-answer.webp" aria-label="打开保险条件待确认完整截图"><img src="../assets/scenarios/insurance-unknown-question-answer.webp" width="960" height="2087" loading="lazy" alt="保险条件待确认：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/insurance-unknown-component-detail.webp"><img src="../assets/scenarios/insurance-unknown-component-detail.webp" width="960" height="2087" loading="lazy" alt="保险条件待确认的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>保险方案比较：按各费用情景分别比较 
+方案A · 比较范围保费：100 元
+方案A · 免赔额：500 元
+方案A · 免赔后赔付比例：100 %
+方案A · 赔付封顶：待确认 
+方案B · 比较范围保费：300 元
+方案B · 免赔额：0 元
+方案B · 免赔后赔付比例：50 %
+方案B · 赔付封顶：明确无封顶 
+情景1 · 适用费用：400 元
+情景1 · 方案A · 赔付：0 元
+情景1 · 方案A · 自付：400 元
+情景1 · 方案A · 含保费总支出：500 元
+情景1 · 方案B · 赔付：200 元
+情景1 · 方案B · 自付：200 元
+情景1 · 方案B · 含保费总支出：500 元
+情景1 · 比较结论：方案A、方案B总支出并列最低 
+情景2 · 适用费用：1000 元
+情景2 · 方案A · 赔付：待确认 
+情景2 · 方案A · 自付：待确认 
+情景2 · 方案A · 含保费总支出：待确认 
+情景2 · 方案B · 赔付：500 元
+情景2 · 方案B · 自付：500 元
+情景2 · 方案B · 含保费总支出：800 元
+情景2 · 比较结论：缺少相关保费或封顶，保留已知分项 
+情景3 · 适用费用：2000 元
+情景3 · 方案A · 赔付：待确认 
+情景3 · 方案A · 自付：待确认 
+情景3 · 方案A · 含保费总支出：待确认 
+情景3 · 方案B · 赔付：1000 元
+情景3 · 方案B · 自付：1000 元
+情景3 · 方案B · 含保费总支出：1300 元
+情景3 · 比较结论：缺少相关保费或封顶，保留已知分项 
+方案A与方案B · 理论交点：相关条件待确认 
+仅按同一比较范围内一笔适用费用、给定免赔及免赔后比例测算，赔付到分；含保费支出与自付分开，未知条件不补0。理论交点未按结算到分，不表示唯一实付持平点或永久更省，不预测风险概率，也未推定其他保障、除外费用或年度剩余额度
+保险方案比较
+方案A · 比较范围保费：100 元
+方案A · 免赔额：500 元
+方案A · 免赔后赔付比例：100 %
+方案B · 比较范围保费：300 元
+方案B · 免赔额：0 元
+方案B · 免赔后赔付比例：50 %
+情景1 · 适用费用：400 元
+情景2 · 适用费用：1000 元
+情景3 · 适用费用：2000 元</pre></details></article><article class="gallery-card" id="credit-fixed"><h3>信用卡固定还款</h3><p class="gallery-question"><span>试着问</span>按所列日息和期末还款规则测算，无期间新增消费、费用或中途付款；先息后本，计息基数为本金与未付利息合计，每期按所列固定额付款。日利率0.1%，期初已有利息0元，每期计划付款200元，期初本金1000元，计息基数本金与未付利息合计，付款顺序先息后本，后续周期明确保持末期天数和同样规则，周期段1每期天数30天，周期段1次数1期</p><p class="gallery-answer">信用卡部分还款：6 期
+还款状态：按所列规则已还清 
+已测算期数：6 期</p><a class="gallery-image" href="../assets/scenarios/credit-fixed-question-answer.webp" aria-label="打开信用卡固定还款完整截图"><img src="../assets/scenarios/credit-fixed-question-answer.webp" width="960" height="2087" loading="lazy" alt="信用卡固定还款：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/credit-fixed-component-detail.webp"><img src="../assets/scenarios/credit-fixed-component-detail.webp" width="960" height="2087" loading="lazy" alt="信用卡固定还款的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>信用卡部分还款：6 期
+还款状态：按所列规则已还清 
+已测算期数：6 期
+已测算天数：180 天
+新增利息：100.37 元
+累计付款：1100.37 元
+剩余欠款：0 元
+剩余本金：0 元
+未付利息：0 元
+期初本金：1000 元
+期初已有利息：0 元
+日利率：0.1 %
+每期计划付款：200 元
+计息基数：本金与未付利息合计 
+付款分配顺序：先息后本 
+后续周期：明确按末期天数持续 
+周期段1：每期30天，共1期 
+按给定日息与周期内无新增消费、费用或中途付款测算，利息在期末四舍五入到分后分配付款；不是每日复利，不默认银行政策或每月30天
+信用卡部分还款
+日利率：0.1 %
+期初已有利息：0 元
+每期计划付款：200 元
+期初本金：1000 元
+计息基数：本金与未付利息合计 
+付款顺序：先息后本 
+后续周期：明确保持末期天数和同样规则 
+周期段1每期天数：30 天
+周期段1次数：1 期</pre></details></article><article class="gallery-card" id="advanced-finance-credit-rules"><h3>信用卡日内计息</h3><p class="gallery-question"><span>试着问</span>2026年1月1日起欠本金1000元，日利率1%，按本金简单计息，无费用和期初利息。1月1日12点还1000元，先息后费后本，按实际分钟计息，到1月3日起日前剩多少本金和利息？</p><p class="gallery-answer">信用卡明确规则结算：5 元
+未还本金：0 元
+未付利息：5 元</p><a class="gallery-image" href="../assets/scenarios/advanced-finance-credit-rules-question-answer.webp" aria-label="打开信用卡日内计息完整截图"><img src="../assets/scenarios/advanced-finance-credit-rules-question-answer.webp" width="960" height="2087" loading="lazy" alt="信用卡日内计息：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/advanced-finance-credit-rules-component-detail.webp"><img src="../assets/scenarios/advanced-finance-credit-rules-component-detail.webp" width="960" height="2087" loading="lazy" alt="信用卡日内计息的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>信用卡明确规则结算：5 元
+未还本金：0 元
+未付利息：5 元
+未付费用：0 元
+欠款合计：5 元
+新增利息含追溯补息：5 元
+已抵扣还款：1000 元
+未抵扣超额付款：0 元
+2026-01-01 12:00 · 还款：1000 元
+按明确日内时刻和起息日期计算，结束日为排他零点；每天按分钟折算利息并在日末到分，日内还款不抵扣尚未结算的当日利息。免息资格、追溯日及费用均由用户明确
+明确规则的金融计算</pre></details></article><article class="gallery-card" id="credit-minimum"><h3>信用卡最低还款</h3><p class="gallery-question"><span>试着问</span>按所列日息和期末还款规则测算，无期间新增消费、费用或中途付款；先息后本，计息基数为本金与未付利息合计，最低比例也按该合计计算，和保底取较大值。日利率0.1%，最低还款保底50元，最低还款比例10%，期初已有利息0元，期初本金1000元，计息基数本金与未付利息合计，付款顺序先息后本，后续周期明确保持末期天数和同样规则，周期段1每期天数30天，周期段1次数1期</p><p class="gallery-answer">信用卡部分还款：22 期
+还款状态：按所列规则已还清 
+已测算期数：22 期</p><a class="gallery-image" href="../assets/scenarios/credit-minimum-question-answer.webp" aria-label="打开信用卡最低还款完整截图"><img src="../assets/scenarios/credit-minimum-question-answer.webp" width="960" height="2087" loading="lazy" alt="信用卡最低还款：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/credit-minimum-component-detail.webp"><img src="../assets/scenarios/credit-minimum-component-detail.webp" width="960" height="2087" loading="lazy" alt="信用卡最低还款的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>信用卡部分还款：22 期
+还款状态：按所列规则已还清 
+已测算期数：22 期
+已测算天数：660 天
+新增利息：308.32 元
+累计付款：1308.32 元
+剩余欠款：0 元
+剩余本金：0 元
+未付利息：0 元
+期初本金：1000 元
+期初已有利息：0 元
+日利率：0.1 %
+最低还款比例：10 %
+最低还款保底：50 元
+最低还款基数：本金与未付利息合计 
+计息基数：本金与未付利息合计 
+付款分配顺序：先息后本 
+后续周期：明确按末期天数持续 
+周期段1：每期30天，共1期 
+按给定日息与周期内无新增消费、费用或中途付款测算，利息在期末四舍五入到分后分配付款；不是每日复利，不默认银行政策或每月30天
+信用卡部分还款
+日利率：0.1 %
+最低还款保底：50 元
+最低还款比例：10 %
+期初已有利息：0 元
+期初本金：1000 元
+计息基数：本金与未付利息合计 
+付款顺序：先息后本 
+后续周期：明确保持末期天数和同样规则 
+周期段1每期天数：30 天
+周期段1次数：1 期</pre></details></article><article class="gallery-card" id="global-22"><h3>信用卡部分还款</h3><p class="gallery-question"><span>试着问</span>交易当日开始生效，起日计息截止日不计息，按本金计简单日息，每段区间利息四舍五入到分，先息后本，费用记未付利息费用。开始日期2026-02-01，截止日期2026-03-01，期初本金1000元，期初已有利息0元，日利率0.1%，2026-02-11还款200元，2026-02-21消费100元</p><p class="gallery-answer">信用卡日期与交易账单：925.38 元
+期末欠款：925.38 元
+累计新增利息：25.38 元</p><a class="gallery-image" href="../assets/scenarios/global-22-question-answer.webp" aria-label="打开信用卡部分还款完整截图"><img src="../assets/scenarios/global-22-question-answer.webp" width="960" height="2087" loading="lazy" alt="信用卡部分还款：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-22-component-detail.webp"><img src="../assets/scenarios/global-22-component-detail.webp" width="960" height="2087" loading="lazy" alt="信用卡部分还款的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>信用卡日期与交易账单：925.38 元
+期末欠款：925.38 元
+累计新增利息：25.38 元
+新增消费：100 元
+新增费用：0 元
+实际抵扣付款：200 元
+未用于抵扣欠款的付款：0 元
+剩余本金：910 元
+未付利息与费用：15.38 元
+计息天数：28 天
+开始日期：2026-02-01 
+截止日期：2026-03-01 
+期初本金：1000 元
+期初已有利息：0 元
+日利率：0.1 %
+计息基数：本金 
+付款顺序：先息后本 
+记录1 · 日期：2026-02-11 
+记录1 · 事项：还款 
+记录1 · 本段天数：10 天
+记录1 · 本段利息：10 元
+记录1 · 交易金额：200 元
+记录1 · 实际抵扣：200 元
+记录1 · 未抵扣：0 元
+记录1 · 交易后欠款：810 元
+记录2 · 日期：2026-02-21 
+记录2 · 事项：消费 
+记录2 · 本段天数：10 天
+记录2 · 本段利息：8.1 元
+记录2 · 交易金额：100 元
+记录2 · 交易后欠款：918.1 元
+记录3 · 日期：2026-03-01 
+记录3 · 事项：截止结算 
+记录3 · 本段天数：8 天
+记录3 · 本段利息：7.28 元
+记录3 · 交易后欠款：925.38 元
+按明确规则测算：交易在当日开始生效，起日计息、截止日不计息；每个交易节点先结算此前区间简单利息并四舍五入到分，再按原顺序处理同日交易；费用记入未付利息费用，不默认免息期、银行政策或未来交易。超出欠款的付款单列，不推定退款
+信用卡日期交易
+开始日期：2026-02-01 
+截止日期：2026-03-01 
+期初本金：1000 元
+期初已有利息：0 元
+日利率：0.1 %
+2026-02-11还款：200 元
+2026-02-21消费：100 元</pre></details></article><article class="gallery-card" id="finance-installment"><h3>分期手续费</h3><p class="gallery-question"><span>试着问</span>6000元的电脑，12期每期手续费30元，一共多付多少</p><p class="gallery-answer">分期额外支出：360 元
+
+分期总额：6360 元</p><a class="gallery-image" href="../assets/scenarios/finance-installment-question-answer.webp" aria-label="打开分期手续费完整截图"><img src="../assets/scenarios/finance-installment-question-answer.webp" width="960" height="2087" loading="lazy" alt="分期手续费：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/finance-installment-component-detail.webp"><img src="../assets/scenarios/finance-installment-component-detail.webp" width="960" height="2087" loading="lazy" alt="分期手续费的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>分期额外支出：360 元
+
+分期总额：6360 元
+每月还款：530 元
+一次付清和分期，差在哪
+多付360元 · 手续费占原价6%
+每期500元本金＋30元手续费；总费用比例不是年化利率
+一次付清：本金/原价6000元，利息/手续费0元，合计6000元
+分12期：本金/原价6000元，利息/手续费360元，合计6360元
+按上述条件计算，金额最后统一舍入
+分期额外支出
+cashPrice：6000 
+monthlyFee：30 
+months：12 </pre></details></article><article class="gallery-card" id="loan-phased-principal"><h3>分阶段等额本金</h3><p class="gallery-question"><span>试着问</span>贷款12000元，还24个月，前12个月月利率1%，后12个月月利率0%，等额本金，每月还500元本金，无其他费用，月供、利息和总付款各多少？</p><p class="gallery-answer">贷款总付款：13110 元
+比较结论：分阶段利率还款测算 
+方案A · 借款本金：12000 元</p><a class="gallery-image" href="../assets/scenarios/loan-phased-principal-question-answer.webp" aria-label="打开分阶段等额本金完整截图"><img src="../assets/scenarios/loan-phased-principal-question-answer.webp" width="960" height="2087" loading="lazy" alt="分阶段等额本金：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-phased-principal-component-detail.webp"><img src="../assets/scenarios/loan-phased-principal-component-detail.webp" width="960" height="2087" loading="lazy" alt="分阶段等额本金的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款总付款：13110 元
+比较结论：分阶段利率还款测算 
+方案A · 借款本金：12000 元
+方案A · 还款期数：24 个月
+方案A · 调息规则：每期本金不变，利息随阶段利率变化 
+方案A · 阶段1 · 期数：1—12 期
+方案A · 阶段1 · 月利率：1 %
+方案A · 阶段1 · 首期还本息：620 元
+方案A · 阶段1 · 末期还本息：565 元
+方案A · 阶段1 · 利息合计：1110 元
+方案A · 阶段1 · 期末本金：6000 元
+方案A · 阶段2 · 期数：13—24 期
+方案A · 阶段2 · 月利率：0 %
+方案A · 阶段2 · 首期还本息：500 元
+方案A · 阶段2 · 末期还本息：500 元
+方案A · 阶段2 · 利息合计：0 元
+方案A · 阶段2 · 期末本金：0 元
+方案A · 还款方式：等额本金 
+方案A · 首期还本息：620 元
+方案A · 末期还本息：500 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：620 元
+方案A · 末期付款：500 元
+方案A · 总利息：1110 元
+方案A · 还本息合计：13110 元
+方案A · 额外费用合计：0 元
+方案A · 总借款成本：1110 元
+方案A · 总付款：13110 元
+按明确给定阶段利率测算；等额本息每次调息按剩余本金和剩余总期限重算月供，等额本金保持每期本金不变。中间保留精度、展示到分，末期结清；前期与月费用为另付现金，未知不补0，不预测未来利率
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 还款期数：24 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 还款方式：等额本金 
+方案A · 阶段1月数：12 个月
+方案A · 阶段1月利率：1 %
+方案A · 阶段2月数：12 个月
+方案A · 阶段2月利率：0 %</pre></details></article><article class="gallery-card" id="loan-funds-compare"><h3>同到账贷款比较</h3><p class="gallery-question"><span>试着问</span>按给定申请借款金额和手续费方式计算，手续费与本金同率同期限，实际到账、月供、总利息及总付款分别多少。方案A · 借款本金12120元，方案A · 月利率1%，方案A · 还款期数12个月，方案A · 前期额外现金费用0元，方案A · 每期额外现金费用0元，方案A · 指定手续费120元，方案A · 手续费收取方式从放款中扣除，方案A · 还款方式等额本息，方案B · 借款本金12000元，方案B · 月利率1%，方案B · 还款期数12个月，方案B · 前期额外现金费用0元，方案B · 每期额外现金费用0元，方案B · 指定手续费120元，方案B · 手续费收取方式计入贷款本金，方案B · 还款方式等额本息</p><p class="gallery-answer">贷款方案比较：方案A、方案B总借款成本并列最低 
+比较结论：方案A、方案B总借款成本并列最低 
+方案A · 手续费方式：从放款中扣除 </p><a class="gallery-image" href="../assets/scenarios/loan-funds-compare-question-answer.webp" aria-label="打开同到账贷款比较完整截图"><img src="../assets/scenarios/loan-funds-compare-question-answer.webp" width="960" height="2087" loading="lazy" alt="同到账贷款比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-funds-compare-component-detail.webp"><img src="../assets/scenarios/loan-funds-compare-component-detail.webp" width="960" height="2087" loading="lazy" alt="同到账贷款比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款方案比较：方案A、方案B总借款成本并列最低 
+比较结论：方案A、方案B总借款成本并列最低 
+方案A · 手续费方式：从放款中扣除 
+方案A · 申请借款金额：12120 元
+方案A · 指定手续费：120 元
+方案A · 实际到账：12000 元
+方案A · 计息还款本金：12120 元
+方案A · 开始时另付现金：0 元
+方案A · 借款本金：12120 元
+方案A · 还款期数：12 个月
+方案A · 月利率：1 %
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：1076.85 元
+方案A · 末期还本息：1076.85 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：1076.85 元
+方案A · 末期付款：1076.85 元
+方案A · 总利息：802.17 元
+方案A · 还本息合计：12922.17 元
+方案A · 额外费用合计：120 元
+方案A · 总借款成本：922.17 元
+方案A · 总付款：12922.17 元
+方案B · 手续费方式：计入贷款本金 
+方案B · 申请借款金额：12000 元
+方案B · 指定手续费：120 元
+方案B · 实际到账：12000 元
+方案B · 计息还款本金：12120 元
+方案B · 开始时另付现金：0 元
+方案B · 借款本金：12000 元
+方案B · 还款期数：12 个月
+方案B · 月利率：1 %
+方案B · 还款方式：等额本息 
+方案B · 首期还本息：1076.85 元
+方案B · 末期还本息：1076.85 元
+方案B · 每期额外费用：0 元
+方案B · 前期额外费用：0 元
+方案B · 首期付款：1076.85 元
+方案B · 末期付款：1076.85 元
+方案B · 总利息：802.17 元
+方案B · 还本息合计：12922.17 元
+方案B · 额外费用合计：120 元
+方案B · 总借款成本：922.17 元
+方案B · 总付款：12922.17 元
+方案B相比方案A总付款差额：0 元
+按给定固定月利率及还款方式测算，中间保留精度、展示到分，末期结清；额外费用为另付现金，只指其它现金费用，不含已指定融资手续费，未知费用不补0，不按低月供直接推荐；申请金额不含融资手续费，计入本金会产生利息，放款扣费不在现金付款中重复计入。同实际到账且已知费用齐全时按总借款成本比较，实际到账不扣另外支付的前期现金
+贷款方案比较
+方案A · 借款本金：12120 元
+方案A · 月利率：1 %
+方案A · 还款期数：12 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 指定手续费：120 元
+方案A · 手续费收取方式：从放款中扣除 
+方案A · 还款方式：等额本息 
+方案B · 借款本金：12000 元
+方案B · 月利率：1 %
+方案B · 还款期数：12 个月
+方案B · 前期额外现金费用：0 元
+方案B · 每期额外现金费用：0 元
+方案B · 指定手续费：120 元
+方案B · 手续费收取方式：计入贷款本金 
+方案B · 还款方式：等额本息 </pre></details></article><article class="gallery-card" id="credit-unknown"><h3>后续周期待确认</h3><p class="gallery-question"><span>试着问</span>按所列日息和期末还款规则测算，无期间新增消费、费用或中途付款；先息后本，计息基数为本金与未付利息合计，每期按所列固定额付款。日利率0.1%，期初已有利息0元，每期计划付款200元，期初本金1000元，计息基数本金与未付利息合计，付款顺序先息后本，后续周期后续尚未给定，周期段1每期天数31天，周期段1次数1期，周期段2每期天数28天，周期段2次数1期</p><p class="gallery-answer">信用卡部分还款：测算范围内未还清 
+还款状态：测算范围内未还清 
+已测算期数：2 期</p><a class="gallery-image" href="../assets/scenarios/credit-unknown-question-answer.webp" aria-label="打开后续周期待确认完整截图"><img src="../assets/scenarios/credit-unknown-question-answer.webp" width="960" height="2087" loading="lazy" alt="后续周期待确认：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/credit-unknown-component-detail.webp"><img src="../assets/scenarios/credit-unknown-component-detail.webp" width="960" height="2087" loading="lazy" alt="后续周期待确认的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>信用卡部分还款：测算范围内未还清 
+还款状态：测算范围内未还清 
+已测算期数：2 期
+已测算天数：59 天
+新增利息：54.27 元
+范围内累计付款：400 元
+剩余欠款：654.27 元
+剩余本金：654.27 元
+未付利息：0 元
+期初本金：1000 元
+期初已有利息：0 元
+日利率：0.1 %
+每期计划付款：200 元
+计息基数：本金与未付利息合计 
+付款分配顺序：先息后本 
+后续周期：只测算已给周期，后续未外推 
+周期段1：每期31天，共1期 
+周期段2：每期28天，共1期 
+按给定日息与周期内无新增消费、费用或中途付款测算，利息在期末四舍五入到分后分配付款；不是每日复利，不默认银行政策或每月30天
+信用卡部分还款
+日利率：0.1 %
+期初已有利息：0 元
+每期计划付款：200 元
+期初本金：1000 元
+计息基数：本金与未付利息合计 
+付款顺序：先息后本 
+后续周期：后续尚未给定 
+周期段1每期天数：31 天
+周期段1次数：1 期
+周期段2每期天数：28 天
+周期段2次数：1 期</pre></details></article><article class="gallery-card" id="finance-savings"><h3>固定存钱目标</h3><p class="gallery-question"><span>试着问</span>已存2万元，每月再存3000元，多久能存够5万元</p><p class="gallery-answer">距离存够5万元：10 个月
+
+距离目标还差：30000 元</p><a class="gallery-image" href="../assets/scenarios/finance-savings-question-answer.webp" aria-label="打开固定存钱目标完整截图"><img src="../assets/scenarios/finance-savings-question-answer.webp" width="960" height="2087" loading="lazy" alt="固定存钱目标：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/finance-savings-component-detail.webp"><img src="../assets/scenarios/finance-savings-component-detail.webp" width="960" height="2087" loading="lazy" alt="固定存钱目标的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>距离存够5万元：10 个月
+
+距离目标还差：30000 元
+按这个节奏，什么时候达标
+第10个月达标
+每月月末存入3000元，未计利息；虚线为未来预测
+按上述条件计算，金额最后统一舍入
+距离存够5万元
+initial：20000 
+monthlyDeposit：3000 
+target：50000 </pre></details></article><article class="gallery-card" id="advanced-finance-insurance-ledger"><h3>多次理赔与年度限额</h3><p class="gallery-question"><span>试着问</span>年保费100元，年度免赔1000元，先免赔后赔80%，年度赔付上限2000元。2026年两次适用费用1500、3000元，2027年一次1500元，每年重置免赔与上限，逐次赔多少、自付多少？</p><p class="gallery-answer">多次保险理赔：2400 元
+适用费用合计：6000 元
+赔付合计：2400 元</p><a class="gallery-image" href="../assets/scenarios/advanced-finance-insurance-ledger-question-answer.webp" aria-label="打开多次理赔与年度限额完整截图"><img src="../assets/scenarios/advanced-finance-insurance-ledger-question-answer.webp" width="960" height="2087" loading="lazy" alt="多次理赔与年度限额：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/advanced-finance-insurance-ledger-component-detail.webp"><img src="../assets/scenarios/advanced-finance-insurance-ledger-component-detail.webp" width="960" height="2087" loading="lazy" alt="多次理赔与年度限额的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>多次保险理赔：2400 元
+适用费用合计：6000 元
+赔付合计：2400 元
+自付合计：3600 元
+含保费总支出：3700 元
+第1笔 · 第一次 · 适用费用：1500 元
+第1笔 · 第一次 · 本次免赔抵扣：1000 元
+第1笔 · 第一次 · 本次赔付：400 元
+第1笔 · 第一次 · 本次自付：1100 元
+第1笔 · 第一次 · 当年累计赔付：400 元
+第1笔 · 第一次 · 年度剩余免赔：0 元
+第1笔 · 第一次 · 年度剩余额度：1600 元
+第2笔 · 第二次 · 适用费用：3000 元
+第2笔 · 第二次 · 本次免赔抵扣：0 元
+第2笔 · 第二次 · 本次赔付：1600 元
+第2笔 · 第二次 · 本次自付：1400 元
+第2笔 · 第二次 · 当年累计赔付：2000 元
+第2笔 · 第二次 · 年度剩余免赔：0 元
+第2笔 · 第二次 · 年度剩余额度：0 元
+第3笔 · 新年度 · 适用费用：1500 元
+第3笔 · 新年度 · 本次免赔抵扣：1000 元
+第3笔 · 新年度 · 本次赔付：400 元
+第3笔 · 新年度 · 本次自付：1100 元
+第3笔 · 新年度 · 当年累计赔付：400 元
+第3笔 · 新年度 · 年度剩余免赔：0 元
+第3笔 · 新年度 · 年度剩余额度：1600 元
+按给定理赔顺序及年度规则计算，跨年重置；历史已赔不计入本次赔付合计，保费仅按用户给定比较范围计一次
+明确规则的金融计算</pre></details></article><article class="gallery-card" id="advanced-finance-loan-cashflows"><h3>实际日期贷款现金流</h3><p class="gallery-question"><span>试着问</span>2026年1月1日到账1000元，借款1000元无利息，每月1日付款300元最多4期。第1期另付当期余额10%的费用，第2期20元费用计入本金，不另有费用，现金付款、剩余本金及Actual/365现金流年化是多少？</p><p class="gallery-answer">贷款现金流与费用：1120 元
+实际到账：1000 元
+初始另付现金：0 元</p><a class="gallery-image" href="../assets/scenarios/advanced-finance-loan-cashflows-question-answer.webp" aria-label="打开实际日期贷款现金流完整截图"><img src="../assets/scenarios/advanced-finance-loan-cashflows-question-answer.webp" width="960" height="2087" loading="lazy" alt="实际日期贷款现金流：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/advanced-finance-loan-cashflows-component-detail.webp"><img src="../assets/scenarios/advanced-finance-loan-cashflows-component-detail.webp" width="960" height="2087" loading="lazy" alt="实际日期贷款现金流的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款现金流与费用：1120 元
+实际到账：1000 元
+初始另付现金：0 元
+总利息：0 元
+已知计划所计费用：120 元
+已知计划现金付款：1120 元
+计划后剩余本金：0 元
+现金流实际年化（Actual/365 XIRR）：92.77 %
+所列现金付清日期：2026-05-01 
+实际付款日期数：4 次
+借款 · 原始计息本金：1000 元
+借款 · 固定本息付款：300 元
+借款 · 最大还款期数：4 期
+借款 · 每期月利率：0 %
+借款 · 2026-02-01 · 利息：0 元
+借款 · 2026-02-01 · 费用：100 元
+借款 · 2026-02-01 · 现金付款：400 元
+借款 · 2026-02-01 · 剩余本金：700 元
+借款 · 2026-03-01 · 利息：0 元
+借款 · 2026-03-01 · 费用：20 元
+借款 · 2026-03-01 · 现金付款：300 元
+借款 · 2026-03-01 · 剩余本金：420 元
+借款 · 2026-04-01 · 利息：0 元
+借款 · 2026-04-01 · 费用：0 元
+借款 · 2026-04-01 · 现金付款：300 元
+借款 · 2026-04-01 · 剩余本金：120 元
+借款 · 2026-05-01 · 利息：0 元
+借款 · 2026-05-01 · 费用：0 元
+借款 · 2026-05-01 · 现金付款：120 元
+借款 · 2026-05-01 · 剩余本金：0 元
+每期利息与费用到分，固定付款不足会保留未结清余额；实际年化按明确借款现金流和Actual/365计算，不等同于银行法定APR，未结清不输出年化
+明确规则的金融计算</pre></details></article><article class="gallery-card" id="loan-funds-deducted"><h3>手续费从放款扣除</h3><p class="gallery-question"><span>试着问</span>按给定申请借款金额和手续费方式计算，手续费与本金同率同期限，实际到账、月供、总利息及总付款分别多少。方案A · 借款本金12000元，方案A · 月利率1%，方案A · 还款期数12个月，方案A · 前期额外现金费用0元，方案A · 每期额外现金费用0元，方案A · 指定手续费120元，方案A · 手续费收取方式从放款中扣除，方案A · 还款方式等额本息</p><p class="gallery-answer">贷款总付款：12794.23 元
+比较结论：贷款到账与成本测算 
+方案A · 手续费方式：从放款中扣除 </p><a class="gallery-image" href="../assets/scenarios/loan-funds-deducted-question-answer.webp" aria-label="打开手续费从放款扣除完整截图"><img src="../assets/scenarios/loan-funds-deducted-question-answer.webp" width="960" height="2087" loading="lazy" alt="手续费从放款扣除：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-funds-deducted-component-detail.webp"><img src="../assets/scenarios/loan-funds-deducted-component-detail.webp" width="960" height="2087" loading="lazy" alt="手续费从放款扣除的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款总付款：12794.23 元
+比较结论：贷款到账与成本测算 
+方案A · 手续费方式：从放款中扣除 
+方案A · 申请借款金额：12000 元
+方案A · 指定手续费：120 元
+方案A · 实际到账：11880 元
+方案A · 计息还款本金：12000 元
+方案A · 开始时另付现金：0 元
+方案A · 借款本金：12000 元
+方案A · 还款期数：12 个月
+方案A · 月利率：1 %
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：1066.19 元
+方案A · 末期还本息：1066.19 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：1066.19 元
+方案A · 末期付款：1066.19 元
+方案A · 总利息：794.23 元
+方案A · 还本息合计：12794.23 元
+方案A · 额外费用合计：120 元
+方案A · 总借款成本：914.23 元
+方案A · 总付款：12794.23 元
+按给定固定月利率及还款方式测算，中间保留精度、展示到分，末期结清；额外费用为另付现金，只指其它现金费用，不含已指定融资手续费，未知费用不补0，不按低月供直接推荐；申请金额不含融资手续费，计入本金会产生利息，放款扣费不在现金付款中重复计入。同实际到账且已知费用齐全时按总借款成本比较，实际到账不扣另外支付的前期现金
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 月利率：1 %
+方案A · 还款期数：12 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 指定手续费：120 元
+方案A · 手续费收取方式：从放款中扣除 
+方案A · 还款方式：等额本息 </pre></details></article><article class="gallery-card" id="loan-funds-separate"><h3>手续费另付</h3><p class="gallery-question"><span>试着问</span>按给定申请借款金额和手续费方式计算，手续费与本金同率同期限，实际到账、月供、总利息及总付款分别多少。方案A · 借款本金12000元，方案A · 月利率1%，方案A · 还款期数12个月，方案A · 前期额外现金费用0元，方案A · 每期额外现金费用0元，方案A · 指定手续费120元，方案A · 手续费收取方式另付现金，方案A · 还款方式等额本息</p><p class="gallery-answer">贷款总付款：12914.23 元
+比较结论：贷款到账与成本测算 
+方案A · 手续费方式：另付现金 </p><a class="gallery-image" href="../assets/scenarios/loan-funds-separate-question-answer.webp" aria-label="打开手续费另付完整截图"><img src="../assets/scenarios/loan-funds-separate-question-answer.webp" width="960" height="2087" loading="lazy" alt="手续费另付：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-funds-separate-component-detail.webp"><img src="../assets/scenarios/loan-funds-separate-component-detail.webp" width="960" height="2087" loading="lazy" alt="手续费另付的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款总付款：12914.23 元
+比较结论：贷款到账与成本测算 
+方案A · 手续费方式：另付现金 
+方案A · 申请借款金额：12000 元
+方案A · 指定手续费：120 元
+方案A · 实际到账：12000 元
+方案A · 计息还款本金：12000 元
+方案A · 开始时另付现金：120 元
+方案A · 借款本金：12000 元
+方案A · 还款期数：12 个月
+方案A · 月利率：1 %
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：1066.19 元
+方案A · 末期还本息：1066.19 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：1066.19 元
+方案A · 末期付款：1066.19 元
+方案A · 总利息：794.23 元
+方案A · 还本息合计：12794.23 元
+方案A · 额外费用合计：120 元
+方案A · 总借款成本：914.23 元
+方案A · 总付款：12914.23 元
+按给定固定月利率及还款方式测算，中间保留精度、展示到分，末期结清；额外费用为另付现金，只指其它现金费用，不含已指定融资手续费，未知费用不补0，不按低月供直接推荐；申请金额不含融资手续费，计入本金会产生利息，放款扣费不在现金付款中重复计入。同实际到账且已知费用齐全时按总借款成本比较，实际到账不扣另外支付的前期现金
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 月利率：1 %
+方案A · 还款期数：12 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 指定手续费：120 元
+方案A · 手续费收取方式：另付现金 
+方案A · 还款方式：等额本息 </pre></details></article><article class="gallery-card" id="loan-funds-financed"><h3>手续费计入本金</h3><p class="gallery-question"><span>试着问</span>按给定申请借款金额和手续费方式计算，手续费与本金同率同期限，实际到账、月供、总利息及总付款分别多少。方案A · 借款本金12000元，方案A · 月利率1%，方案A · 还款期数12个月，方案A · 前期额外现金费用0元，方案A · 每期额外现金费用0元，方案A · 指定手续费120元，方案A · 手续费收取方式计入贷款本金，方案A · 还款方式等额本息</p><p class="gallery-answer">贷款总付款：12922.17 元
+比较结论：贷款到账与成本测算 
+方案A · 手续费方式：计入贷款本金 </p><a class="gallery-image" href="../assets/scenarios/loan-funds-financed-question-answer.webp" aria-label="打开手续费计入本金完整截图"><img src="../assets/scenarios/loan-funds-financed-question-answer.webp" width="960" height="2087" loading="lazy" alt="手续费计入本金：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-funds-financed-component-detail.webp"><img src="../assets/scenarios/loan-funds-financed-component-detail.webp" width="960" height="2087" loading="lazy" alt="手续费计入本金的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款总付款：12922.17 元
+比较结论：贷款到账与成本测算 
+方案A · 手续费方式：计入贷款本金 
+方案A · 申请借款金额：12000 元
+方案A · 指定手续费：120 元
+方案A · 实际到账：12000 元
+方案A · 计息还款本金：12120 元
+方案A · 开始时另付现金：0 元
+方案A · 借款本金：12000 元
+方案A · 还款期数：12 个月
+方案A · 月利率：1 %
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：1076.85 元
+方案A · 末期还本息：1076.85 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：1076.85 元
+方案A · 末期付款：1076.85 元
+方案A · 总利息：802.17 元
+方案A · 还本息合计：12922.17 元
+方案A · 额外费用合计：120 元
+方案A · 总借款成本：922.17 元
+方案A · 总付款：12922.17 元
+按给定固定月利率及还款方式测算，中间保留精度、展示到分，末期结清；额外费用为另付现金，只指其它现金费用，不含已指定融资手续费，未知费用不补0，不按低月供直接推荐；申请金额不含融资手续费，计入本金会产生利息，放款扣费不在现金付款中重复计入。同实际到账且已知费用齐全时按总借款成本比较，实际到账不扣另外支付的前期现金
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 月利率：1 %
+方案A · 还款期数：12 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 指定手续费：120 元
+方案A · 手续费收取方式：计入贷款本金 
+方案A · 还款方式：等额本息 </pre></details></article><article class="gallery-card" id="savings-pause"><h3>暂停与恢复存钱</h3><p class="gallery-question"><span>试着问</span>已有5000，前三个月月存2000，再暂停2个月，之后持续每月3000，多久到5万，第5个月有多少？</p><p class="gallery-answer">按计划达到存钱目标：18 个月
+当前余额：5000 元
+存钱目标：50000 元</p><a class="gallery-image" href="../assets/scenarios/savings-pause-question-answer.webp" aria-label="打开暂停与恢复存钱完整截图"><img src="../assets/scenarios/savings-pause-question-answer.webp" width="960" height="2087" loading="lazy" alt="暂停与恢复存钱：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/savings-pause-component-detail.webp"><img src="../assets/scenarios/savings-pause-component-detail.webp" width="960" height="2087" loading="lazy" alt="暂停与恢复存钱的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按计划达到存钱目标：18 个月
+当前余额：5000 元
+存钱目标：50000 元
+距离目标还需新增存入：45000 元
+目标达成时间：第18个月末 
+达标时余额：50000 元
+达标时超过目标：0 元
+第5个月末新增存入：6000 元
+第5个月末余额：11000 元
+第5个月末距离目标：39000 元
+阶段1（起步）：第1–3个月，每月 2000 元 
+阶段1新增存入：6000 元
+阶段2（暂停）：第4–5个月，每月 0 元 
+阶段2新增存入：0 元
+阶段3（恢复）：第6个月起持续存入，每月 3000 元 
+计划结束口径：最后阶段每月持续存入 
+按每月末存入预测，不计利息或收益；余额、目标和每月金额分别四舍五入到分，保留原始条件；未知后续计划不延长，曲线仅展示前18个月，目标时间单独计算，不受图窗限制
+分阶段存钱目标与余额
+当前余额：5000 元
+目标：50000 元
+分阶段存入计划：已有5000，前三个月月存2000，再暂停2个月，之后持续每月3000，多久到5万，第5个月有多少？ </pre></details></article><article class="gallery-card" id="savings-unknown"><h3>未知后续存钱计划</h3><p class="gallery-question"><span>试着问</span>已有5000，前三个月每月2000，之后计划不知道，多久到5万，第6个月有多少？</p><p class="gallery-answer">按计划达到存钱目标：后续存入计划待确认 
+当前余额：5000 元
+存钱目标：50000 元</p><a class="gallery-image" href="../assets/scenarios/savings-unknown-question-answer.webp" aria-label="打开未知后续存钱计划完整截图"><img src="../assets/scenarios/savings-unknown-question-answer.webp" width="960" height="2087" loading="lazy" alt="未知后续存钱计划：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/savings-unknown-component-detail.webp"><img src="../assets/scenarios/savings-unknown-component-detail.webp" width="960" height="2087" loading="lazy" alt="未知后续存钱计划的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按计划达到存钱目标：后续存入计划待确认 
+当前余额：5000 元
+存钱目标：50000 元
+距离目标还需新增存入：45000 元
+目标达成时间：后续存入计划待确认 
+第6个月末余额：后续计划待确认 
+阶段1（已知计划）：第1–3个月，每月 2000 元 
+阶段1新增存入：6000 元
+计划结束口径：所列阶段之后未知，不延长预测 
+按每月末存入预测，不计利息或收益；余额、目标和每月金额分别四舍五入到分，保留原始条件；未知后续计划不延长，曲线仅展示前3个月，目标时间单独计算，不受图窗限制
+分阶段存钱目标与余额
+当前余额：5000 元
+目标：50000 元
+分阶段存入计划：已有5000，前三个月每月2000，之后计划不知道，多久到5万，第6个月有多少？ </pre></details></article><article class="gallery-card" id="finance-loan"><h3>等额本息与本金曲线</h3><p class="gallery-question"><span>试着问</span>房价110万，首付15万，月息1.5厘，还30年，哪种方式压力小</p><p class="gallery-answer">等额本息总支出 · 含首付：1380168.85 元
+
+等额本金 · 含首付：1357212.5 元</p><a class="gallery-image" href="../assets/scenarios/finance-loan-question-answer.webp" aria-label="打开等额本息与本金曲线完整截图"><img src="../assets/scenarios/finance-loan-question-answer.webp" width="960" height="2087" loading="lazy" alt="等额本息与本金曲线：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/finance-loan-component-detail.webp"><img src="../assets/scenarios/finance-loan-component-detail.webp" width="960" height="2087" loading="lazy" alt="等额本息与本金曲线的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>等额本息总支出 · 含首付：1380168.85 元
+
+等额本金 · 含首付：1357212.5 元
+月供怎么变
+等额本金少付利息 22956.35 元
+贷款950000元 · 月利率0.15% · 固定利率且无提前还款的理论测算
+等额本息：本金/原价950000元，利息/手续费280168.85元，合计1230168.85元
+等额本金：本金/原价950000元，利息/手续费257212.5元，合计1207212.5元
+按上述条件计算，金额最后统一舍入
+等额本息总支出 · 含首付
+monthlyRate：0.0015 
+months：360 
+principal：950000 </pre></details></article><article class="gallery-card" id="loan-unknown"><h3>贷款费用待确认</h3><p class="gallery-question"><span>试着问</span>比较给定固定月利率与期限的两种等额本息方案，额外费用均为另付现金，月供、利息和总付款分别是多少。方案A · 借款本金12000元，方案A · 月利率1%，方案A · 还款期数12个月，方案A · 每期额外现金费用0元，方案A · 还款方式等额本息，方案B · 借款本金12000元，方案B · 月利率1%，方案B · 还款期数24个月，方案B · 前期额外现金费用0元，方案B · 每期额外现金费用0元，方案B · 还款方式等额本息</p><p class="gallery-answer">贷款方案比较：费用尚未齐全，保留已知还款与利息 
+比较结论：费用尚未齐全，保留已知还款与利息 
+方案A · 借款本金：12000 元</p><a class="gallery-image" href="../assets/scenarios/loan-unknown-question-answer.webp" aria-label="打开贷款费用待确认完整截图"><img src="../assets/scenarios/loan-unknown-question-answer.webp" width="960" height="2087" loading="lazy" alt="贷款费用待确认：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-unknown-component-detail.webp"><img src="../assets/scenarios/loan-unknown-component-detail.webp" width="960" height="2087" loading="lazy" alt="贷款费用待确认的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款方案比较：费用尚未齐全，保留已知还款与利息 
+比较结论：费用尚未齐全，保留已知还款与利息 
+方案A · 借款本金：12000 元
+方案A · 还款期数：12 个月
+方案A · 月利率：1 %
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：1066.19 元
+方案A · 末期还本息：1066.19 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：待确认 
+方案A · 首期付款：1066.19 元
+方案A · 末期付款：1066.19 元
+方案A · 总利息：794.23 元
+方案A · 还本息合计：12794.23 元
+方案A · 额外费用合计：待确认 
+方案A · 总借款成本：待确认 
+方案A · 总付款：待确认 
+方案B · 借款本金：12000 元
+方案B · 还款期数：24 个月
+方案B · 月利率：1 %
+方案B · 还款方式：等额本息 
+方案B · 首期还本息：564.88 元
+方案B · 末期还本息：564.88 元
+方案B · 每期额外费用：0 元
+方案B · 前期额外费用：0 元
+方案B · 首期付款：564.88 元
+方案B · 末期付款：564.88 元
+方案B · 总利息：1557.16 元
+方案B · 还本息合计：13557.16 元
+方案B · 额外费用合计：0 元
+方案B · 总借款成本：1557.16 元
+方案B · 总付款：13557.16 元
+按给定固定月利率及还款方式测算，中间保留精度、展示到分，末期结清；额外费用为另付现金，只指其它现金费用，不含已指定融资手续费，未知费用不补0，不按低月供直接推荐
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 月利率：1 %
+方案A · 还款期数：12 个月
+方案A · 每期额外现金费用：0 元
+方案A · 还款方式：等额本息 
+方案B · 借款本金：12000 元
+方案B · 月利率：1 %
+方案B · 还款期数：24 个月
+方案B · 前期额外现金费用：0 元
+方案B · 每期额外现金费用：0 元
+方案B · 还款方式：等额本息 </pre></details></article><article class="gallery-card" id="loan-phased"><h3>贷款阶段调息</h3><p class="gallery-question"><span>试着问</span>贷款12000元，还24个月，前12个月月利率1%，后12个月月利率0.5%，等额本息每次调息按剩余本金和剩余期限重算月供，明确没有其他费用，月供利息总付款分别多少</p><p class="gallery-answer">贷款总付款：13344.88 元
+比较结论：分阶段利率还款测算 
+方案A · 借款本金：12000 元</p><a class="gallery-image" href="../assets/scenarios/loan-phased-question-answer.webp" aria-label="打开贷款阶段调息完整截图"><img src="../assets/scenarios/loan-phased-question-answer.webp" width="960" height="2087" loading="lazy" alt="贷款阶段调息：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/loan-phased-component-detail.webp"><img src="../assets/scenarios/loan-phased-component-detail.webp" width="960" height="2087" loading="lazy" alt="贷款阶段调息的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>贷款总付款：13344.88 元
+比较结论：分阶段利率还款测算 
+方案A · 借款本金：12000 元
+方案A · 还款期数：24 个月
+方案A · 调息规则：按剩余本金与剩余期限重算月供 
+方案A · 阶段1 · 期数：1—12 期
+方案A · 阶段1 · 月利率：1 %
+方案A · 阶段1 · 首期还本息：564.88 元
+方案A · 阶段1 · 末期还本息：564.88 元
+方案A · 阶段1 · 利息合计：1136.37 元
+方案A · 阶段1 · 期末本金：6357.79 元
+方案A · 阶段2 · 期数：13—24 期
+方案A · 阶段2 · 月利率：0.5 %
+方案A · 阶段2 · 首期还本息：547.19 元
+方案A · 阶段2 · 末期还本息：547.19 元
+方案A · 阶段2 · 利息合计：208.52 元
+方案A · 阶段2 · 期末本金：0 元
+方案A · 还款方式：等额本息 
+方案A · 首期还本息：564.88 元
+方案A · 末期还本息：547.19 元
+方案A · 每期额外费用：0 元
+方案A · 前期额外费用：0 元
+方案A · 首期付款：564.88 元
+方案A · 末期付款：547.19 元
+方案A · 总利息：1344.88 元
+方案A · 还本息合计：13344.88 元
+方案A · 额外费用合计：0 元
+方案A · 总借款成本：1344.88 元
+方案A · 总付款：13344.88 元
+按明确给定阶段利率测算；等额本息每次调息按剩余本金和剩余总期限重算月供，等额本金保持每期本金不变。中间保留精度、展示到分，末期结清；前期与月费用为另付现金，未知不补0，不预测未来利率
+贷款方案比较
+方案A · 借款本金：12000 元
+方案A · 还款期数：24 个月
+方案A · 前期额外现金费用：0 元
+方案A · 每期额外现金费用：0 元
+方案A · 还款方式：等额本息 
+方案A · 阶段1月数：12 个月
+方案A · 阶段1月利率：1 %
+方案A · 阶段2月数：12 个月
+方案A · 阶段2月利率：0.5 %</pre></details></article><article class="gallery-card" id="global-24"><h3>非固定存款计划</h3><p class="gallery-question"><span>试着问</span>已存5000元，前三个月每月存2000元，之后持续每月存3000元，不计收益，多久达到5万元，第3个月余额多少？</p><p class="gallery-answer">按计划达到存钱目标：16 个月
+当前余额：5000 元
+存钱目标：50000 元</p><a class="gallery-image" href="../assets/scenarios/global-24-question-answer.webp" aria-label="打开非固定存款计划完整截图"><img src="../assets/scenarios/global-24-question-answer.webp" width="960" height="2087" loading="lazy" alt="非固定存款计划：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-24-component-detail.webp"><img src="../assets/scenarios/global-24-component-detail.webp" width="960" height="2087" loading="lazy" alt="非固定存款计划的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>按计划达到存钱目标：16 个月
+当前余额：5000 元
+存钱目标：50000 元
+距离目标还需新增存入：45000 元
+目标达成时间：第16个月末 
+达标时余额：50000 元
+达标时超过目标：0 元
+第3个月末新增存入：6000 元
+第3个月末余额：11000 元
+第3个月末距离目标：39000 元
+阶段1（前三个月）：第1–3个月，每月 2000 元 
+阶段1新增存入：6000 元
+阶段2（后续）：第4个月起持续存入，每月 3000 元 
+计划结束口径：最后阶段每月持续存入 
+按每月末存入预测，不计利息或收益；余额、目标和每月金额分别四舍五入到分，保留原始条件；未知后续计划不延长，曲线仅展示前16个月，目标时间单独计算，不受图窗限制
+分阶段存钱目标与余额
+当前余额：5000 元
+目标：50000 元
+分阶段存入计划：已存5000元，前三个月每月存2000元，之后持续每月存3000元，不计收益，多久达到5万元，第3个月余额多少？ </pre></details></article></div></section><section class="gallery-section" id="category-8"><h2>饮食与营养 <span>7 个示例</span></h2><div class="gallery-grid"><article class="gallery-card" id="meal-compare"><h3>完整成本用餐比较</h3><p class="gallery-question"><span>试着问</span>两人吃饭：米用200克，每包1000克10元；肉用300克，每包500克30元；菜用300克，每包500克6元，无库存，燃气消耗2元。外卖餐款40、打包2、配送4、优惠6元。自己做和外卖哪个更省？</p><p class="gallery-answer">每份消耗更低 · 自己做：12.8 元/份
+共同用餐份数：2 份
+本次付款更低 · 外卖：40 元</p><a class="gallery-image" href="../assets/scenarios/meal-compare-question-answer.webp" aria-label="打开完整成本用餐比较完整截图"><img src="../assets/scenarios/meal-compare-question-answer.webp" width="960" height="2087" loading="lazy" alt="完整成本用餐比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/meal-compare-component-detail.webp"><img src="../assets/scenarios/meal-compare-component-detail.webp" width="960" height="2087" loading="lazy" alt="完整成本用餐比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>每份消耗更低 · 自己做：12.8 元/份
+共同用餐份数：2 份
+本次付款更低 · 外卖：40 元
+每份消耗更低 · 自己做：12.8 元/份
+自己做 · 本次付款：46 元
+自己做 · 实际消耗：25.6 元
+自己做 · 每份消耗：12.8 元/份
+自己做 · 比最低付款多：6 元
+自己做 · 每份比最低多：0 元/份
+自己做 · 米使用：200 克
+自己做 · 米已有库存用量：0 克
+自己做 · 米新购包装：1 包
+自己做 · 米剩余：800 克
+自己做 · 米新购物款：10 元
+自己做 · 肉使用：300 克
+自己做 · 肉已有库存用量：0 克
+自己做 · 肉新购包装：1 包
+自己做 · 肉剩余：200 克
+自己做 · 肉新购物款：30 元
+自己做 · 菜使用：300 克
+自己做 · 菜已有库存用量：0 克
+自己做 · 菜新购包装：1 包
+自己做 · 菜剩余：200 克
+自己做 · 菜新购物款：6 元
+外卖 · 本次付款：40 元
+外卖 · 实际消耗：40 元
+外卖 · 每份消耗：20 元/份
+外卖 · 比最低付款多：0 元
+外卖 · 每份比最低多：7.2 元/份
+付款按本次新购物款及付款项，消耗按实际使用食材及消耗项；剩余食材不折作退款；未提供库存的食材按本次新购测算
+共同用餐份数：2 份
+自己做 · 原食谱 2 份
+米：原食谱用量 200 克，每包 1000 克，每包价格 10 元，未提库存按新购测算
+肉：原食谱用量 300 克，每包 500 克，每包价格 30 元，未提库存按新购测算
+菜：原食谱用量 300 克，每包 500 克，每包价格 6 元，未提库存按新购测算
+燃气：2 元 · 仅消耗
+外卖
+餐款：40 元 · 付款与消耗
+打包：2 元 · 付款与消耗
+配送：4 元 · 付款与消耗
+优惠：-6 元 · 付款与消耗
+做饭与外卖的付款、消耗比较
+用餐份数：2 份
+自己做条件：共同用餐份数：2 份
+自己做 · 原食谱 2 份
+米：原食谱用量 200 克，每包 1000 克，每包价格 10 元，未提库存按新购测算
+肉：原食谱用量 300 克，每包 500 克，每包价格 30 元，未提库存按新购测算
+菜：原食谱用量 300 克，每包 500 克，每包价格 6 元，未提库存按新购测算
+燃气：2 元 · 仅消耗
+外卖
+餐款：40 元 · 付款与消耗
+打包：2 元 · 付款与消耗
+配送：4 元 · 付款与消耗
+优惠：-6 元 · 付款与消耗 </pre></details></article><article class="gallery-card" id="food-rice"><h3>熟饭反推生米</h3><p class="gallery-question"><span>试着问</span>300克可食生米，给定熟制出成率300%，3个人平均分，每人熟米饭多少克？。熟制出成率300%，可食率100%，分食人数3人，采购重量300克</p><p class="gallery-answer">每人熟制成品：300 克
+采购重量：300 克
+去除不可食部分后：300 克</p><a class="gallery-image" href="../assets/scenarios/food-rice-question-answer.webp" aria-label="打开熟饭反推生米完整截图"><img src="../assets/scenarios/food-rice-question-answer.webp" width="960" height="2087" loading="lazy" alt="熟饭反推生米：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/food-rice-component-detail.webp"><img src="../assets/scenarios/food-rice-component-detail.webp" width="960" height="2087" loading="lazy" alt="熟饭反推生米的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>每人熟制成品：300 克
+采购重量：300 克
+去除不可食部分后：300 克
+不可食部分：0 克
+给定可食率：100 %
+熟制成品总量：900 克
+给定熟制出成率：300 %
+熟制增加重量：600 克
+分食人数：3 人
+每人熟制成品：300 克
+仅按给定可食率与熟制出成率逐步换算，份量按人数平均分配
+采购与每人份量
+熟制出成率：300 %
+可食率：100 %
+分食人数：3 人
+采购重量：300 克</pre></details></article><article class="gallery-card" id="global-7"><h3>生重、熟重与可食部分</h3><p class="gallery-question"><span>试着问</span>买2公斤带骨肉，可食率70%，熟制出成率80%，4个人分，每人熟制份量多少？如果每人想吃0.3公斤，还需要多买多少？</p><p class="gallery-answer">每人熟制成品：0.28 公斤
+采购重量：2 公斤
+去除不可食部分后：1.4 公斤</p><a class="gallery-image" href="../assets/scenarios/global-7-question-answer.webp" aria-label="打开生重、熟重与可食部分完整截图"><img src="../assets/scenarios/global-7-question-answer.webp" width="960" height="2087" loading="lazy" alt="生重、熟重与可食部分：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-7-component-detail.webp"><img src="../assets/scenarios/global-7-component-detail.webp" width="960" height="2087" loading="lazy" alt="生重、熟重与可食部分的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>每人熟制成品：0.28 公斤
+采购重量：2 公斤
+去除不可食部分后：1.4 公斤
+不可食部分：0.6 公斤
+给定可食率：70 %
+熟制成品总量：1.12 公斤
+给定熟制出成率：80 %
+熟制减少重量：0.28 公斤
+分食人数：4 人
+每人熟制成品：0.28 公斤
+每人目标：0.3 公斤
+达到目标所需采购：2.142857 公斤
+还需采购：0.142857 公斤
+仅按给定可食率与熟制出成率逐步换算，份量按人数平均分配；采购倒推为约值，整包装另算
+采购与每人份量
+熟制出成率：80 %
+可食率：70 %
+分食人数：4 人
+采购重量：2 公斤
+每人目标：0.3 公斤</pre></details></article><article class="gallery-card" id="global-8"><h3>自己做与外卖比较</h3><p class="gallery-question"><span>试着问</span>两人吃饭，家里有500克米，用200克，原成本未知。外卖40元，自己做和外卖的付款、消耗分别多少？</p><p class="gallery-answer">本次付款更低 · 自己做：0 元
+共同用餐份数：2 份
+本次付款更低 · 自己做：0 元</p><a class="gallery-image" href="../assets/scenarios/global-8-question-answer.webp" aria-label="打开自己做与外卖比较完整截图"><img src="../assets/scenarios/global-8-question-answer.webp" width="960" height="2087" loading="lazy" alt="自己做与外卖比较：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-8-component-detail.webp"><img src="../assets/scenarios/global-8-component-detail.webp" width="960" height="2087" loading="lazy" alt="自己做与外卖比较的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>本次付款更低 · 自己做：0 元
+共同用餐份数：2 份
+本次付款更低 · 自己做：0 元
+每份消耗比较：需补充已有食材成本 
+自己做 · 本次付款：0 元
+自己做 · 实际消耗：已有食材成本未给，暂不能完整计算 
+自己做 · 比最低付款多：0 元
+自己做 · 米使用：200 克
+自己做 · 米已有库存用量：200 克
+自己做 · 米新购包装：0 包
+自己做 · 米剩余：300 克
+自己做 · 米新购物款：0 元
+外卖 · 本次付款：40 元
+外卖 · 实际消耗：40 元
+外卖 · 每份消耗：20 元/份
+外卖 · 比最低付款多：40 元
+付款按本次新购物款及付款项，消耗按实际使用食材及消耗项；剩余食材不折作退款；已有食材成本未给时不代填单价，不评判全部方案消耗排名
+共同用餐份数：2 份
+自己做 · 原食谱 2 份
+米：原食谱用量 200 克，已有 500 克
+外卖
+餐款：40 元 · 付款与消耗
+打包：2 元 · 付款与消耗
+配送：4 元 · 付款与消耗
+优惠：-6 元 · 付款与消耗
+做饭与外卖的付款、消耗比较
+用餐份数：2 份
+自己做条件：共同用餐份数：2 份
+自己做 · 原食谱 2 份
+米：原食谱用量 200 克，已有 500 克
+外卖
+餐款：40 元 · 付款与消耗
+打包：2 元 · 付款与消耗
+配送：4 元 · 付款与消耗
+优惠：-6 元 · 付款与消耗 </pre></details></article><article class="gallery-card" id="food-nutrition-no-goal"><h3>营养换算无目标</h3><p class="gallery-question"><span>试着问</span>标签每份能量100千焦、蛋白质8克、脂肪6克，只吃了半份，各摄入多少？主要看蛋白质，没有设置目标</p><p class="gallery-answer">本次摄入蛋白质：4 克
+实际食用量：0.5 份
+标签基准份量：1 份</p><a class="gallery-image" href="../assets/scenarios/food-nutrition-no-goal-question-answer.webp" aria-label="打开营养换算无目标完整截图"><img src="../assets/scenarios/food-nutrition-no-goal-question-answer.webp" width="960" height="2087" loading="lazy" alt="营养换算无目标：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/food-nutrition-no-goal-component-detail.webp"><img src="../assets/scenarios/food-nutrition-no-goal-component-detail.webp" width="960" height="2087" loading="lazy" alt="营养换算无目标的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>本次摄入蛋白质：4 克
+实际食用量：0.5 份
+标签基准份量：1 份
+本次能量：50 千焦
+本次蛋白质：4 克
+本次脂肪：3 克
+按给定标签与实际食用量同比例换算
+营养标签实际摄入
+标签基准份量：1 份
+实际食用量：0.5 份
+能量标签数值：100 千焦
+脂肪标签数值：6 克
+蛋白质标签数值：8 克</pre></details></article><article class="gallery-card" id="global-9"><h3>营养标签按实际份量换算</h3><p class="gallery-question"><span>试着问</span>一包250克吃了一半，营养标签每100克能量400千卡、糖8克、蛋白质6克、钠350毫克，实际摄入多少？自设能量目标2000千卡、糖25克、钠2000毫克，本次各占多少？</p><p class="gallery-answer">本次摄入能量：500 千卡
+实际食用量：125 克
+标签基准份量：100 克</p><a class="gallery-image" href="../assets/scenarios/global-9-question-answer.webp" aria-label="打开营养标签按实际份量换算完整截图"><img src="../assets/scenarios/global-9-question-answer.webp" width="960" height="2087" loading="lazy" alt="营养标签按实际份量换算：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-9-component-detail.webp"><img src="../assets/scenarios/global-9-component-detail.webp" width="960" height="2087" loading="lazy" alt="营养标签按实际份量换算的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>本次摄入能量：500 千卡
+实际食用量：125 克
+标签基准份量：100 克
+本次能量：500 千卡
+能量 · 自设目标：2000 千卡
+能量 · 占自设目标：25 %
+本次蛋白质：7.5 克
+本次糖：10 克
+糖 · 自设目标：25 克
+糖 · 占自设目标：40 %
+本次钠：437.5 毫克
+钠 · 自设目标：2000 毫克
+钠 · 占自设目标：21.88 %
+按给定标签同比例换算，占比仅指本次食用量与用户自设目标
+营养标签实际摄入
+标签基准份量：100 克
+实际食用量：125 克
+能量标签数值：400 千卡
+能量自设目标：2000 千卡
+蛋白质标签数值：6 克
+钠标签数值：350 毫克
+钠自设目标：2000 毫克
+糖标签数值：8 克
+糖自设目标：25 克</pre></details></article><article class="gallery-card" id="global-6"><h3>食谱按人数缩放</h3><p class="gallery-question"><span>试着问</span>4人份用大米400克、鸡蛋4个、番茄600克，改成7人份；番茄500克一盒，买多少？</p><p class="gallery-answer">配方放大倍数：1.75 倍
+
+7人份采购</p><a class="gallery-image" href="../assets/scenarios/global-6-question-answer.webp" aria-label="打开食谱按人数缩放完整截图"><img src="../assets/scenarios/global-6-question-answer.webp" width="960" height="2087" loading="lazy" alt="食谱按人数缩放：问题与回答界面"></a><details class="gallery-detail"><summary>查看组件细节</summary><a href="../assets/scenarios/global-6-component-detail.webp"><img src="../assets/scenarios/global-6-component-detail.webp" width="960" height="2087" loading="lazy" alt="食谱按人数缩放的组件细节"></a></details><details class="gallery-detail"><summary>查看完整回答</summary><pre>配方放大倍数：1.75 倍
+
+7人份采购
+大米：700 克，原始/分摊依据 400 克
+鸡蛋：7 个，原始/分摊依据 4 个
+番茄：1050 克，原始/分摊依据 600 克，购买/可用 1500 克，余量 450 克
+7人份采购
+大米：700 克，原始/分摊依据 400 克
+鸡蛋：7 个，原始/分摊依据 4 个
+番茄：1050 克，原始/分摊依据 600 克，购买/可用 1500 克，余量 450 克
+配方放大倍数
+原人数：4 人
+新人数：7 人
+大米原用量：400 克
+鸡蛋原用量：4 个
+番茄原用量：600 克
+番茄包装：500 克/盒</pre></details></article></div></section><section class="help-band"><h2>还有想算的问题？</h2><a class="text-link" href="../support/">告诉我们 →</a></section></main><footer class="site-footer wrap"><div><div class="footer-brand">Smile Tally 随口算</div><div>© 2026 喜脉 · 生活这道题，随口就能算</div></div><nav class="footer-nav" aria-label="页脚导航"><a href="../">产品介绍</a><a href="../support/">技术支持</a><a href="../privacy/">隐私政策</a><a href="../terms/">用户协议</a></nav></footer></body></html>
